@@ -1,0 +1,515 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Varela+Round&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	font-family: 'Varela Round', sans-serif;
+}
+a, a:link, a:visited {
+	color: inherit;
+	text-decoration: none;
+}
+li {
+	list-style: none;
+}
+body{
+	overflow-x: hidden;
+	min-height: 100%;
+}
+.video{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	object-fit: cover;
+	object-position: center;
+	z-index: -100;
+}
+.container{
+	width: 1140px;
+	margin: 0 auto;
+}
+header{
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	width: 100%;
+	padding: 1rem;
+	color: white;
+}
+header .container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+header nav ul{
+	display: flex;
+}
+header nav ul li{
+	padding: 10px;
+}
+header button{
+	background: transparent;
+	border: 0;
+	cursor: pointer;
+}
+header h1 button{
+	font-size: 2rem;
+	font-weight: bold;
+	color: white;
+}
+header nav ul li button{
+	font-size: 1.2rem;
+	color: white;
+}
+/* header 태그에 active 태그가 추가되면 header영역 black으로 바뀌고 서서히 나타나는 효과 */
+header.active{
+	background-color: rgba(0,0,0);
+	animation:fadeIn 0.5s ease-in-out;
+}
+@keyframes fadeIn{
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+main{
+	width: 100%;
+	height: 100vh;
+	color: white;
+	background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2));
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+main h4{
+	font-size: 2rem;
+}
+main h2{
+	font-size: 3.5rem;
+	margin: 0 auto;
+	letter-spacing: 3px;
+}
+.mouse{
+	background-color: transparent;
+	border: none;
+	color: white;
+	font-size: 2rem;
+	position: absolute;
+	bottom: 1rem;
+	left: 50%;
+	transform: translateX(-50%);
+	animation: upDown 1s ease-in-out infinite;
+	cursor: pointer;
+}
+@keyframes upDown{
+	0%{
+		bottom: 1rem;
+	}
+	50%{
+		bottom: 1.5rem;
+	}
+	100%{
+		bottom: 1rem;
+	}
+}
+main h2 span::after{
+	content: "";
+	height: 40px;
+	width: 3px;
+	background-color: #fff;
+	display: inline-block;
+	animation: blink .7s ease-in-out infinite;
+}
+@keyframes blink{
+	0%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+section{
+	padding: 5rem 0;
+}
+section:nth-child(2n){
+	background-color: #f8f8f8;
+}
+section .title{
+	margin-bottom: 3rem;
+}
+section .title h4{
+	font-size: 1.3rem;
+	color: #ed4848;
+	position: relative;
+}
+section .title h2{
+	font-size: 3.5rem;
+}
+section .title p{
+	font-size: 1.2rem;
+}
+/* float 속성 해제 */
+section .about-self::after{
+	content: "";
+	clear: both;
+	display: block;
+}
+/* 본문 너비 절반 지정 & 왼쪽 배치 */
+section .about-self .left{
+	width: 50%;
+	float: left;
+}
+/* 이미지 크기가 부모 영역을 넘지 않도록 부모 영역의 최대 크기로 지정 */
+section .about-self .left img{
+	max-width: 100%;
+}
+/* 본문 너비 절반 지정 & 오른쪽 배치 */
+section .about-self .right{
+	width: 50%;
+	float: left;
+	padding: 0 2rem;
+	margin-top: 4rem;
+}
+/* 본문 오른쪽 h3 태그의 글자 크기와 여백 지정 */
+section .about-self .right h3{
+	font-size: 2.2rem;
+	margin-bottom: 1rem;
+}
+/* 본문 오른쪽 h3 태그의 strong 태그 색상 강조 */
+section .about-self .right h3 strong{
+	color: rgb(165, 222, 154);
+}
+/* 본문 오른쪽 p 태그의 크기와 여백 지정 */
+section .about-self .right p{
+	font-size: 1.1rem;
+	margin: 2rem 0;
+}
+/* 본문 오른쪽의 아이콘 폰트 크기와 여백 지정 */
+section .about-self .right .social a{
+	font-size: 2.5rem;
+	margin-right: 0.5rem;
+}
+section .img img{
+	max-width: 250px;
+	margin: 20px;
+	transition: .5s;
+}
+section.like::after{
+	content: "";
+	clear: both;
+	display: block;
+}
+section.like .img{
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+section.like .mog{
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+section.like .mog_video{
+	display: flex;
+	flex: 1;
+}
+section.like .mog2{
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+section.like .img img{
+	border-radius: 10px;
+}
+section.like .img video{
+	border-radius: 10px;
+}
+section.like .img img:hover{
+	transform: scale(1.1);
+	z-index: 2;
+}
+/* 투두리스트 */
+.todo-wrapper{
+	justify-content: center;
+	margin-top: 3rem;
+	min-width: 600px;
+}
+.todo-title {
+	padding: 2rem;
+	text-align: center;
+	color: rosybrown;
+	font-size: 5rem;
+	display: block;
+}
+
+.todo-box {
+	width: 600px;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: white;
+	border: 1px solid #ddd;
+}
+
+.todo-input-box {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	height: 3rem;
+	border-bottom: 1px solid #ddd;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+button {
+	background-color: transparent;
+	border: 0;
+}
+
+.complete-all-btn {
+	color: gray;
+	min-width: none;
+	min-height: none;
+	width: 1.5rem;
+	height: 1.5rem;
+	margin: 0.5rem 0.5rem;
+	border-radius: 50px;
+	cursor: pointer;
+	font-size: 1.2rem;
+	
+}
+
+.complete-all-btn.checked {
+	color: green
+}
+
+.todo-input {
+	width: 80%;
+	text-align: center;
+	border: 0;
+	outline: none;
+	font-size: 1.3rem;
+}
+
+.todo-item {
+	position: relative;
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	height: 3rem;
+	border-bottom: 1px solid #ddd;
+}
+
+.todo-item:hover .delBtn {
+	opacity: 1;
+}
+
+.checkbox {
+	min-width: none;
+	min-height: none;
+	width: 1.5rem;
+	height: 1.5rem;
+	margin: 0.5rem 0.5rem;
+	border-radius: 50px;
+	border: 1px solid lightgray;
+	cursor: pointer;
+	text-align: center;
+}
+
+.todo-item.checked .checkbox{
+	border: 2px solid darkgray;
+	color: green;
+}
+
+.todo {
+	font-size: 1.3rem;
+	padding: 0 1rem;
+	width: 80%;
+}
+
+.todo-item.checked .todo{
+font-style: italic;
+text-decoration: line-through;
+color: lightgray;
+}
+
+.delBtn {
+	opacity: 1;
+	width: 3rem;
+	height: 3rem;
+	font-size: 1.5rem;
+	font-weight: lighter;
+	cursor: pointer;
+}
+
+.todo-bottom {
+	height: 3rem;
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 1rem;
+}
+
+.button-group{
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+.button-group button {
+	border: 1px solid #eee;
+	padding: 0.2rem 0.5rem;
+	margin: 0 0.5rem;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+.button-group button.selected {
+	border: 2px solid rosybrown;
+	padding: 0.2rem 0.5rem;
+	margin: 0 0.5rem;
+	border-radius: 8px;
+}
+
+.clear-completed-btn:hover {
+	font-style: italic;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.edit-input {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 590px;
+	height: 2.8rem;
+	margin: 0;
+}
+
+p.info {
+	margin-top: 1.5rem;
+	text-align: center;
+	color: #ccc;
+}
+.footer{
+	width: 100%;
+	clear: both;
+	text-align: center;
+	padding: 5px;
+	display: flex;
+	justify-content: space-between;
+}
+
+/* 미디어 쿼리 */
+@media screen and (max-width: 1140px){
+	main .container{
+		width: 992px;
+	}
+	section .container{
+		width: 600px;
+	}
+	section .about-self .left{
+		width: 100%;
+		margin-bottom: 1.5rem;
+	}
+	section .about-self .right{
+		width: 100%;
+		padding: 0;
+	}
+	section.like .container{
+		width: 100%;
+		padding: 0;
+	}
+}
+@media screen and (max-width: 870px){
+	html {
+		font-size: 13px;
+	}
+	main .container {
+		width: 576px;
+	}
+	section.about .container {
+		width: 400px;
+	}
+
+	section .img>img{
+		width: 100%;
+		height: auto;
+		max-width: 400px;
+	}
+}
+@media screen and (max-width: 600px){
+	html {
+		font-size: 12px;
+	}
+	main .container {
+		width: 400px;
+	}
+	section .about-self .left img{
+		max-width: 70%;
+	}
+	section.about-self .right{
+		padding: 20px;
+	}
+	section.like .img{
+		display: block;
+	}
+	section .img img{
+		margin:auto;
+		margin-bottom: 20px;
+	}
+	section .img video{
+		margin: auto;
+		margin-bottom: 20px;
+	}
+	section .todo-wrapper .todo-box{
+		width: 450px;
+	}
+}
+@media screen and (max-width: 400px){
+	section .about-self .left img{
+		max-width: 50%;
+		margin-left: 5%;
+	}
+	section .container{
+		width: 100px;
+		margin: 0;
+	}
+	.todo-title{
+		display: flex;
+		margin-left: 20px;
+	}
+	section .todo-wrapper .todo-box{
+		position: inherit;
+		margin-left: 150px;
+		width: 250px;
+	}
+	.todo-bottom {
+		height: 8rem;
+		display: flex;
+		flex-wrap: nowrap;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		padding: 1rem 1rem;
+	}
+	p.info {
+		display: flex;
+		margin-left: 80px;
+		margin-top: 1.5rem;
+		text-align: center;
+	}
+}

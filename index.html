@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>자기소개</title>
+	<link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+	<div class="video">
+		<video autoplay loop muted>
+			<source src="/video/힐링영상, 제주의 봄 by 이니스프리.mkv">
+		</video>
+	</div>
+	<header>
+		<div class="container">
+			<h1>
+				<button data-animation-scroll="true" data-target="#main">MAIN</button>
+			</h1>
+			<nav>
+				<ul>
+					<li><button data-animation-scroll="true" data-target="#about">About Me</button></li>
+					<li><button data-animation-scroll="true" data-target="#like">Like</button></li>
+					<li><button data-animation-scroll="true" data-target="#want">Want</button></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main id="main">
+		<div class="container">
+			<h4>Welcome</h4>
+			<h2>I`M A <span></span></h2>
+			<button class="mouse">
+				<i class="fa-solid fa-computer-mouse"></i>
+			</button>
+		</div>
+	</main>
+	<section id="about" class="about">
+		<div class="container">
+			<div class="title">
+				<h4>Who Am I</h4>
+				<h2>About Me</h2>
+			</div>
+			<div class="about-self">
+				<div class="left">
+					<img src="/img/men.jpg" alt="man img">
+				</div>
+				<div class="right">
+					<h3>Hello, <strong>I`M Jaeyeong</strong></h3>
+					<p>I am 27 years old.</p>
+					<p>live in Gangnam-gu Seoul</p>
+					<p>I like watching YouYube and broadcasting</p>
+					<p>My favorite animal is a puppy</p>
+					<div class="social">
+						<a href="#">
+							<i class="fa-brands fa-youtube"></i>
+						</a>
+						<a href="#">
+							<i class="fa-brands fa-twitch"></i>
+						</a>
+						<a href="#">
+							<i class="fa-solid fa-dog"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="like" id="like">
+		<div class="container">
+			<div class="title">
+				<h4>Who Am I</h4>
+				<h2>Like</h2>
+			</div>
+			<div class="img">
+				<div class="mog">
+					<img src="/img/mog1.jpg" alt="mog1">
+					<img src="/img/mog2.jpg" alt="mog2">
+				</div>
+				<div class="mog_video">
+					<video autoplay loop muted width="300">
+						<source src="/video/몽.mp4" type="video/mp4">
+					</video>
+				</div>
+				<div class="mog2">
+					<img src="/img/mog3.jpg" alt="mog3">
+					<img src="/img/mog4.jpg" alt="mog4">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="want" class="want">
+		<div class="container">
+			<div class="title">
+				<h4>Who Am I</h4>
+				<h2>Want</h2>
+			</div>
+			<div class="todo-wrapper">
+				<div class="todo-title">todos</div>
+				<div class="todo-box">
+
+					<div class="todo-input-box">
+						<button class="complete-all-btn">✔</button>
+						<input type="text" class="todo-input" placeholder="해야 할 일을 입력해주세요.">
+					</div>
+
+					<ul class="todo-list">
+						<!-- <li class="todo-item checked">
+							<div class="checkbox">✔</div>
+							<div class="todo">첫 번째 할 일</div>
+							<button class="delBtn">x</button>
+						</li>
+						<li class="todo-item">
+							<div class="checkbox"></div>
+							<div class="todo">두 번째 할 일</div>
+							<button class="delBtn">x</button>
+						</li>
+						<li class="todo-item">
+							<div class="checkbox"></div>
+							<div class="todo">세 번째 할 일</div>
+							<button class="delBtn">x</button>
+						</li> -->
+					</ul>
+					<div class="todo-bottom">
+						<div class="left-items">3 items left</div>
+						<div class="button-group">
+							<button class="show-all-btn selected" data-type="all">All</button>
+							<button class="show-active-btn" data-type="active">Active</button>
+							<button class="show-completed-btn" data-type="completed">Completed</button>
+						</div>
+						<button class="clear-completed-btn">Clear Completed</button>
+					</div>
+				</div>
+				<p class='info'>더블클릭 시 수정 가능!</p>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="git-logo">
+			<i class="fa-brands fa-github">
+				<a href="https://github.com/pyojaeyeong/artist">GitHub</a>
+			</i>
+		</div>
+		<p class="copy">© Introduction. All Rights Reserved</p>
+	</footer>
+	<script src="https://kit.fontawesome.com/4b62dd0042.js" crossorigin="anonymous"></script>
+	<script src="/js/script.js"></script>
+</body>
+
+</html>
