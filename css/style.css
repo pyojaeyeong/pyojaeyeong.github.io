@@ -73,11 +73,7 @@ header nav ul li button{
 header.active{
 	background-color: rgba(0,0,0);
 	animation:fadeIn 0.5s ease-in-out;
-<<<<<<< HEAD
 	z-index: 20;
-=======
-	z-index: 10;
->>>>>>> 15ff7d23b24fae29872bb5e7bda31e6018ae41cf
 }
 @keyframes fadeIn{
 	0% {
