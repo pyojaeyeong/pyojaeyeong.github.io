@@ -494,12 +494,12 @@ p.info {
 	}
 	.todo-title{
 		display: flex;
-		margin-left: 20px;
+		margin-left: 70px;
 	}
 	section .todo-wrapper .todo-box{
 		position: inherit;
-		margin-left: 150px;
-		width: 250px;
+		margin-left: 180px;
+		width: 300px;
 	}
 	.todo-bottom {
 		height: 8rem;
@@ -512,7 +512,7 @@ p.info {
 	}
 	p.info {
 		display: flex;
-		margin-left: 80px;
+		margin-left: 120px;
 		margin-top: 1.5rem;
 		text-align: center;
 	}
