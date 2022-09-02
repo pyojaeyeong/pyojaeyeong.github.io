@@ -28,9 +28,6 @@ body{
 	object-position: center;
 	z-index: -100;
 }
-.video video{
-	width: 100%;
-}
 .container{
 	width: 1140px;
 	margin: 0 auto;
