@@ -260,6 +260,8 @@ section.like .img img:hover{
 	transform: translateX(-50%);
 	background-color: white;
 	border: 1px solid #ddd;
+	border-radius: 10px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
 }
 
 .todo-input-box {
