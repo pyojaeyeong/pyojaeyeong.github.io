@@ -481,9 +481,12 @@ p.info {
 	}
 }
 @media screen and (max-width: 400px){
+	html{
+		max-width: 400px
+	}
 	section .about-self .left img{
 		max-width: 50%;
-		margin-left: 5%;
+		margin-left: 25%;
 	}
 	section .container{
 		width: 100px;
@@ -491,12 +494,12 @@ p.info {
 	}
 	.todo-title{
 		display: flex;
-		margin-left: 70px;
+		margin-left: 90px;
 	}
 	section .todo-wrapper .todo-box{
 		position: inherit;
-		margin-left: 180px;
-		width: 300px;
+		margin-left: 195px;
+		width: 350px;
 	}
 	.todo-bottom {
 		height: 8rem;
