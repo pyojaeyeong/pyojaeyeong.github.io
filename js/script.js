@@ -32,9 +32,33 @@ for(let i = 0; i < scrollMoveEl.length; i++){
 const todoInputElem = document.querySelector('.todo-input');
 const todoListElem = document.querySelector('.todo-list');
 const completeAllBtnElem = document.querySelector('.complete-all-btn');
-
 const leftItemsElem = document.querySelector('.left-items')
+const showAllBtnElem = document.querySelector('.show-all-btn');
+const showActiveBtnElem = document.querySelector('.show-active-btn');
+const showCompletedBtnElem = document.querySelector('.show-completed-btn');
+const clearCompletedBtnElem = document.querySelector('.clear-completed-btn');
 
+
+let id = 0;
+const setId = (newId) => {id = newId};
+
+let isAllCompleted = false; // 전체 todos 체크 여부
+const setIsAllCompleted = (bool) => { isAllCompleted = bool};
+
+let currentShowType = 'all'; // all  | active | complete
+const setCurrentShowType = (newShowType) => currentShowType = newShowType
+
+let todos = [];
+const setTodos = (newTodos) => {
+    todos = newTodos;
+}
+
+const getAllTodos = () => {
+    return todos;
+}
+const getCompletedTodos = () => {
+    return todos.filter(todo => todo.isCompleted === true );
+}
 const getActiveTodos = () => {
     return todos.filter(todo => todo.isCompleted === false);
 }
@@ -43,25 +67,6 @@ const setLeftItems = () => {
     const leftTodos = getActiveTodos()
     leftItemsElem.innerHTML = `${leftTodos.length} items left`
 }
-
-let todos = [];
-let id = 0;
-
-const setTodos = (newTodos) => {
-    todos = newTodos;
-}
-
-const getAllTodos = () => {
-    return todos;
-}
-
-const getCompletedTodos = () => {
-    return todos.filter(todo => todo.isCompleted === true );
-}
-
-let isAllCompleted = false; // 전체 todos 체크 여부
-
-const setIsAllCompleted = (bool) => { isAllCompleted = bool};
 
 const completeAll = () => {
     completeAllBtnElem.classList.add('checked');
@@ -97,7 +102,8 @@ const onClickCompleteAll = () => {
 }
 
 const appendTodos = (text) => {
-    const newId = id++;
+    const newId = id + 1; // 기존에 i++ 로 작성했던 부분을 setId()를 통해 id값을 갱신하였다.
+    setId(newId)
     const newTodos = getAllTodos().concat({id: newId, isCompleted: false, content: text })
     // const newTodos = [...getAllTodos(), {id: newId, isCompleted: false, content: text }]
     setTodos(newTodos)
@@ -153,52 +159,90 @@ const onDbclickTodo = (e, todoId) => {
     todoItemElem.appendChild(inputElem);
 }
 
+const clearCompletedTodos = () => {
+    const newTodos = getActiveTodos()
+    setTodos(newTodos)
+    paintTodos();
+}
+
+const paintTodo = (todo) => {
+    const todoItemElem = document.createElement('li');
+    todoItemElem.classList.add('todo-item');
+
+    todoItemElem.setAttribute('data-id', todo.id );
+
+    const checkboxElem = document.createElement('div');
+    checkboxElem.classList.add('checkbox');
+    checkboxElem.addEventListener('click', () => completeTodo(todo.id))
+
+    const todoElem = document.createElement('div');
+    todoElem.classList.add('todo');
+    todoElem.addEventListener('dblclick', (event) => onDbclickTodo(event, todo.id))
+    todoElem.innerText = todo.content;
+
+    const delBtnElem = document.createElement('button');
+    delBtnElem.classList.add('delBtn');
+    delBtnElem.addEventListener('click', () =>  deleteTodo(todo.id))
+    delBtnElem.innerHTML = 'X';
+
+    if(todo.isCompleted) {
+        todoItemElem.classList.add('checked');
+        checkboxElem.innerText = '✔';
+    }
+
+    todoItemElem.appendChild(checkboxElem);
+    todoItemElem.appendChild(todoElem);
+    todoItemElem.appendChild(delBtnElem);
+
+    todoListElem.appendChild(todoItemElem);
+}
+
 const paintTodos = () => {
-    todoListElem.innerHTML = null; //todoListElem 요소 안의 HTML 초기화
-	const allTodos = getAllTodos() // todos 배열 가져오기
+    todoListElem.innerHTML = null;
 
-    allTodos.forEach(todo => { 
-        const todoItemElem = document.createElement('li');
-        todoItemElem.classList.add('todo-item');
+    switch (currentShowType) {
+        case 'all':
+            const allTodos = getAllTodos();
+            allTodos.forEach(todo => { paintTodo(todo);});
+            break;
+        case 'active': 
+            const activeTodos = getActiveTodos();
+            activeTodos.forEach(todo => { paintTodo(todo);});
+            break;
+        case 'completed': 
+            const completedTodos = getCompletedTodos();
+            completedTodos.forEach(todo => { paintTodo(todo);});
+            break;
+        default:
+            break;
+    }
+}
 
-        todoItemElem.setAttribute('data-id', todo.id );
+const onClickShowTodosType = (e) => {
+    const currentBtnElem = e.target;
+    const newShowType = currentBtnElem.dataset.type;
 
-        const checkboxElem = document.createElement('div');
-        checkboxElem.classList.add('checkbox');
-        checkboxElem.addEventListener('click', () => completeTodo(todo.id))
-    
-        const todoElem = document.createElement('div');
-        todoElem.classList.add('todo');
-        todoElem.addEventListener('dblclick', (event) => onDbclickTodo(event, todo.id))
-        todoElem.innerText = todo.content;
-    
-        const delBtnElem = document.createElement('button');
-        delBtnElem.classList.add('delBtn');
-        delBtnElem.addEventListener('click', () =>  deleteTodo(todo.id))
-        delBtnElem.innerHTML = 'X';
+    if ( currentShowType === newShowType ) return;
 
-        if(todo.isCompleted) {
-            todoItemElem.classList.add('checked');
-            checkboxElem.innerText = '✔';
-        }
+    const preBtnElem = document.querySelector(`.show-${currentShowType}-btn`);
+    preBtnElem.classList.remove('selected');
 
-        todoItemElem.appendChild(checkboxElem);
-        todoItemElem.appendChild(todoElem);
-        todoItemElem.appendChild(delBtnElem);
-
-        todoListElem.appendChild(todoItemElem);
-    })
+    currentBtnElem.classList.add('selected')
+    setCurrentShowType(newShowType)
+    paintTodos();
 }
 
 const init = () => {
-    todoInputElem.addEventListener('keydown', (e) =>{
+    todoInputElem.addEventListener('keypress', (e) =>{
         if( e.key === 'Enter' ){
             appendTodos(e.target.value); todoInputElem.value ='';
         }
     })
-
-    completeAllBtnElem.addEventListener('click',  onClickCompleteAll)
-
+    completeAllBtnElem.addEventListener('click',  onClickCompleteAll);
+    showAllBtnElem.addEventListener('click', onClickShowTodosType);
+    showActiveBtnElem.addEventListener('click',onClickShowTodosType);
+    showCompletedBtnElem.addEventListener('click',onClickShowTodosType);
+    clearCompletedBtnElem.addEventListener('click', clearCompletedTodos);
     setLeftItems()
 }
 
