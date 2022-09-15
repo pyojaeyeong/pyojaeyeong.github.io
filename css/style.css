@@ -1,11 +1,11 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Varela+Round&display=swap');
-*{
+
+html{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Poppins', sans-serif;
-	font-family: 'Varela Round', sans-serif;
+	font-family: 'Poppins','Varela Round', sans-serif;
 }
 a, a:link, a:visited {
 	color: inherit;
@@ -18,10 +18,25 @@ body{
 	overflow-x: hidden;
 	min-height: 100%;
 }
-.video{
+/* .video{
+	overflow: hidden;
+	width: 100%;
+	height: 100vh;
+	object-fit: cover;
+} */
+/* .video{
 	position: absolute;
 	top: 0;
 	left: 0;
+	width: 100%;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	object-fit: cover;
+	overflow: hidden;
+} */
+.video{
+	position: absolute;
 	width: 100%;
 	height: 100vh;
 	object-fit: cover;
@@ -218,16 +233,13 @@ section.like .img{
 section.like .mog{
 	display: flex;
 	flex-direction: column;
-	flex: 1;
 }
 section.like .mog_video{
 	display: flex;
-	flex: 1;
 }
 section.like .mog2{
 	display: flex;
 	flex-direction: column;
-	flex: 1;
 }
 section.like .img img{
 	border-radius: 10px;
@@ -417,7 +429,7 @@ p.info {
 }
 
 /* 미디어 쿼리 */
-@media screen and (max-width: 1140px){
+/* @media screen and (max-width: 1140px){
 	main .container{
 		width: 992px;
 	}
@@ -518,4 +530,4 @@ p.info {
 		margin-top: 1.5rem;
 		text-align: center;
 	}
-}
+} */

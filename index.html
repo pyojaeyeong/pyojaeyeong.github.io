@@ -6,20 +6,21 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>자기소개</title>
-	<link rel="stylesheet" href="/css/style.css">
+	<!-- <link rel="stylesheet" href="/css/style.css"> -->
+	<link rel="stylesheet" href="/css/index.css">
 </head>
 
 <body>
 	<div class="video">
-		<video autoplay loop muted>
+		<video autoplay loop muted class="main_video">
 			<source src="/video/mainVideo.mp4">
 		</video>
 	</div>
 	<header>
 		<div class="container">
-			<h1>
+			<p>
 				<button data-animation-scroll="true" data-target="#main">MAIN</button>
-			</h1>
+			</p>
 			<nav>
 				<ul>
 					<li><button data-animation-scroll="true" data-target="#about">About Me</button></li>
@@ -31,8 +32,8 @@
 	</header>
 	<main id="main">
 		<div class="container">
-			<h4>Welcome</h4>
-			<h2>I`M A <span></span></h2>
+			<p class="hi">Welcome</p>
+			<p class="im">I`M A <span></span></p>
 			<button class="mouse">
 				<i class="fa-solid fa-computer-mouse"></i>
 			</button>
@@ -41,7 +42,7 @@
 	<section id="about" class="about">
 		<div class="container">
 			<div class="title">
-				<h4>Who Am I</h4>
+				<h1>Who Am I</h1>
 				<h2>About Me</h2>
 			</div>
 			<div class="about-self">
@@ -55,13 +56,13 @@
 					<p>I like watching YouTube and broadcasting</p>
 					<p>My favorite animal is a puppy</p>
 					<div class="social">
-						<a href="/">
+						<a href="/" class="youtube">
 							<i class="fa-brands fa-youtube"></i>
 						</a>
-						<a href="/">
+						<a href="/" class="twich">
 							<i class="fa-brands fa-twitch"></i>
 						</a>
-						<a href="/">
+						<a href="/" class="puppy">
 							<i class="fa-solid fa-dog"></i>
 						</a>
 					</div>
@@ -72,7 +73,7 @@
 	<section class="like" id="like">
 		<div class="container">
 			<div class="title">
-				<h4>Who Am I</h4>
+				<h1>Who Am I</h1>
 				<h2>Like</h2>
 			</div>
 			<div class="img">
@@ -81,7 +82,7 @@
 					<img src="/img/mog2.jpg" alt="mog2">
 				</div>
 				<div class="mog_video">
-					<video autoplay loop muted width="300">
+					<video autoplay loop muted width="300px">
 						<source src="/video/몽.mp4" type="video/mp4">
 					</video>
 				</div>
@@ -95,11 +96,12 @@
 	<section id="want" class="want">
 		<div class="container">
 			<div class="title">
-				<h4>Who Am I</h4>
+				<h1>Who Am I</h1>
 				<h2>Want</h2>
 			</div>
 			<div class="todo-wrapper">
 				<div class="todo-title">todos</div>
+				<div class="todo">
 				<div class="todo-box">
 
 					<div class="todo-input-box">
@@ -134,8 +136,9 @@
 						<button class="clear-completed-btn">Clear Completed</button>
 					</div>
 				</div>
-				<p class='info'>더블클릭 시 수정 가능!</p>
 			</div>
+			<p class='info'>더블클릭 시 수정 가능!</p>
+		</div>
 		</div>
 	</section>
 	<footer class="footer">

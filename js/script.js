@@ -243,7 +243,7 @@ const init = () => {
     showActiveBtnElem.addEventListener('click',onClickShowTodosType);
     showCompletedBtnElem.addEventListener('click',onClickShowTodosType);
     clearCompletedBtnElem.addEventListener('click', clearCompletedTodos);
-    setLeftItems()
+    setLeftItems();
 }
 
-init()
+init();
