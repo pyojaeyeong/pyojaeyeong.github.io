@@ -1,156 +1,92 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>자기소개</title>
-	<!-- <link rel="stylesheet" href="/css/style.css"> -->
-	<link rel="stylesheet" href="/css/index.css">
+	<link rel="stylesheet" href="/css/style.css">
+	<script src="https://kit.fontawesome.com/4b62dd0042.js" crossorigin="anonymous"></script>
+	<title>Medical</title>
 </head>
 
 <body>
-	<div class="video">
-		<video autoplay loop muted class="main_video">
-			<source src="/video/mainVideo.mp4">
-		</video>
-	</div>
 	<header>
 		<div class="container">
-			<p>
-				<button data-animation-scroll="true" data-target="#main">MAIN</button>
+			<p class="main">
+				<button><i class="fa-solid fa-star"></i>Medical</button>
 			</p>
 			<nav>
 				<ul>
-					<li><button data-animation-scroll="true" data-target="#about">About Me</button></li>
-					<li><button data-animation-scroll="true" data-target="#like">Like</button></li>
-					<li><button data-animation-scroll="true" data-target="#want">Want</button></li>
+					<li><button>Menu1</button></li>
+					<li><button>Menu2</button></li>
+					<li><button>Menu3</button></li>
+					<li><button>Menu4</button></li>
+					<li><button>Menu5</button></li>
 				</ul>
 			</nav>
+			<p class="menu-r">
+				<button>LOGIN</button>
+				<button>REGISTER</button>
+				<button><i class="fa-solid fa-gear"></i></button>
+			</p>
 		</div>
 	</header>
-	<main id="main">
+	<section class="lorem-area">
 		<div class="container">
-			<p class="hi">Welcome</p>
-			<p class="im">I`M A <span></span></p>
-			<button class="mouse">
-				<i class="fa-solid fa-computer-mouse"></i>
-			</button>
-		</div>
-	</main>
-	<section id="about" class="about">
-		<div class="container">
-			<div class="title">
-				<h1>Who Am I</h1>
-				<h2>About Me</h2>
-			</div>
-			<div class="about-self">
-				<div class="left">
-					<img src="/img/men.jpg" alt="man img">
-				</div>
+			<div class="lorem">
 				<div class="right">
-					<h3>Hello, <strong>I`M Jaeyeong</strong></h3>
-					<p>I am 27 years old.</p>
-					<p>live in Gangnam-gu Seoul</p>
-					<p>I like watching YouTube and broadcasting</p>
-					<p>My favorite animal is a puppy</p>
-					<div class="social">
-						<a href="/" class="youtube">
-							<i class="fa-brands fa-youtube"></i>
-						</a>
-						<a href="/" class="twich">
-							<i class="fa-brands fa-twitch"></i>
-						</a>
-						<a href="/" class="puppy">
-							<i class="fa-solid fa-dog"></i>
-						</a>
-					</div>
+					<p>Loram ipsum dolor amet</p>
+					<p>Nam sollicitud nunc, cursus eros vulputate sed. Vestibulum lobortis.</p>
+					<p>
+						<button>MORE INFO</button>
+						<button>REGISTER NOW</button>
+					</p>
+				</div>
+				<div class="left">
+					<img src="/img/6301.jpg" alt="man img">
 				</div>
 			</div>
 		</div>
 	</section>
-	<section class="like" id="like">
+	<section class="link">
 		<div class="container">
-			<div class="title">
-				<h1>Who Am I</h1>
-				<h2>Like</h2>
+			<div class="first">
+				<p>Business Solution</p>
+				<p>Interdum et malesuada fames ac ante...</p>
 			</div>
-			<div class="img">
-				<div class="mog">
-					<img src="/img/mog1.jpg" alt="mog1">
-					<img src="/img/mog2.jpg" alt="mog2">
-				</div>
-				<div class="mog_video">
-					<video autoplay loop muted width="300px">
-						<source src="/video/몽.mp4" type="video/mp4">
-					</video>
-				</div>
-				<div class="mog2">
-					<img src="/img/mog3.jpg" alt="mog3">
-					<img src="/img/mog4.jpg" alt="mog4">
-				</div>
+			<div class="second">
+				<p>Free project quote</p>
+				<p>Interdum et malesuada fames ac ante...</p>
+			</div>
+			<div class="third">
+				<p>Nulla lobortis nunc</p>
+				<p>Interdum et malesuada fames ac ante...</p>
 			</div>
 		</div>
 	</section>
-	<section id="want" class="want">
+	<section class="personnel">
 		<div class="container">
-			<div class="title">
-				<h1>Who Am I</h1>
-				<h2>Want</h2>
+			<div class="doctors">
+				<i class="fa-solid fa-users"></i>
+				<p>+1200</p>
+				<p>Doctors</p>
+				<p>Maecenas nisl libero, tincidunt id odio id, feugiat vulputate quam.</p>
 			</div>
-			<div class="todo-wrapper">
-				<div class="todo-title">todos</div>
-				<div class="todo">
-				<div class="todo-box">
-
-					<div class="todo-input-box">
-						<button class="complete-all-btn">✔</button>
-						<input type="text" class="todo-input" placeholder="해야 할 일을 입력해주세요.">
-					</div>
-
-					<ul class="todo-list">
-						<!-- <li class="todo-item checked">
-							<div class="checkbox">✔</div>
-							<div class="todo">첫 번째 할 일</div>
-							<button class="delBtn">x</button>
-						</li>
-						<li class="todo-item">
-							<div class="checkbox"></div>
-							<div class="todo">두 번째 할 일</div>
-							<button class="delBtn">x</button>
-						</li>
-						<li class="todo-item">
-							<div class="checkbox"></div>
-							<div class="todo">세 번째 할 일</div>
-							<button class="delBtn">x</button>
-						</li> -->
-					</ul>
-					<div class="todo-bottom">
-						<div class="left-items">3 items left</div>
-						<div class="button-group">
-							<button class="show-all-btn selected" data-type="all">All</button>
-							<button class="show-active-btn" data-type="active">Active</button>
-							<button class="show-completed-btn" data-type="completed">Completed</button>
-						</div>
-						<button class="clear-completed-btn">Clear Completed</button>
-					</div>
-				</div>
+			<div class="clinics">
+				<i class="fa-solid fa-house-chimney"></i>
+				<p>+1200
+				<p>Clinics</p>
+				<p>Maecenas nisl libero, tincidunt id odio id, feugiat vulputate quam.</p>
 			</div>
-			<p class='info'>더블클릭 시 수정 가능!</p>
-		</div>
+			<div class="specialist">
+				<i class="fa-solid fa-briefcase-medical"></i>
+				<p>+100</p>
+				<p>Specialist</p>
+				<p>Maecenas nisl libero, tincidunt id odio id, feugiat vulputate quam.</p>
+			</div>
 		</div>
 	</section>
-	<footer class="footer">
-		<div class="git-logo">
-			<i class="fa-brands fa-github">
-				<a href="https://github.com/pyojaeyeong/pyojaeyeong.github.io">GitHub</a>
-			</i>
-		</div>
-		<p class="copy">© Introduction. All Rights Reserved</p>
-	</footer>
-	<script src="https://kit.fontawesome.com/4b62dd0042.js" crossorigin="anonymous"></script>
-	<script src="/js/script.js"></script>
 </body>
 
 </html>
