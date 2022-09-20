@@ -71,12 +71,33 @@ header .container nav{
 	font-weight: bold;
 }
 header .container nav .menu{
+	display: flex;
 	margin: 1.2rem;
+	position: relative;
 }
 header .container nav .menu a{
 	border: 0;
-	padding: 1rem;
+	padding-right: 2rem;
 	font-size: 18px;
+}
+header .container nav .menu a:hover:after{
+	display: block;
+	position: absolute;
+	bottom: -0.5rem;
+	content: "";
+	width: 30px;
+	height: 5px;
+	border-radius: 10px;
+	background-color: blue;
+	animation: slideMenu 0.5s ease-out;
+}
+@keyframes slideMenu{
+	0%{
+		width: 0;
+	}
+	100%{
+		width: 30px;
+	}
 }
 header .container nav .option{
 	position: absolute;
@@ -192,4 +213,57 @@ section .container li:nth-child(2n){
 	font-weight: normal;
 	font-size: 1rem;
 	margin-top: 1rem;
+}
+section .personnel{
+	margin-top: 5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	position: relative;
+}
+section .personnel img{
+	object-fit: none;
+	float: left;
+	margin-left: 5rem;
+}
+section .personnel .counters{
+	float: left;
+	display: block;
+	font-size: 2.5rem;
+	font-weight: bold;
+	color: #357A38;
+}
+section .personnel .counter{
+	float: left;
+	display: block;
+	font-size: 2.5rem;
+	font-weight: bold;
+	color: #357A38;
+	margin-top: 0.6rem;
+}
+section .personnel .counter p:last-child{
+	font-size: 1.5rem;
+	color: black;
+}
+section .personnel .counter p{
+	padding: 0;
+	margin: 0 2rem;
+}
+section .personnel .counters p:last-child{
+	font-size: 1.5rem;
+	color: black;
+}
+section .personnel .counters p{
+	padding: 0;
+	margin: 0 2rem;
+}
+section .personnel p:last-child{
+	display: block;
+	content: "";
+	clear: both;
+	line-height: 1.5rem;
+}
+section .personnel .texts{
+	padding-top: 1.1rem;
 }
