@@ -80,6 +80,9 @@ header .container nav .menu a{
 	padding-right: 2rem;
 	font-size: 18px;
 }
+header .container nav .menu a:hover{
+	color: #03ACF2;
+}
 header .container nav .menu a:hover:after{
 	display: block;
 	position: absolute;
@@ -88,7 +91,7 @@ header .container nav .menu a:hover:after{
 	width: 30px;
 	height: 5px;
 	border-radius: 10px;
-	background-color: blue;
+	background-color: #03ACF2;
 	animation: slideMenu 0.5s ease-out;
 }
 @keyframes slideMenu{
@@ -188,7 +191,7 @@ section .container div:nth-child(2n)::after{
 	background-color: gray;
 }
 section .container li:first-child:hover{
-	color: blue;
+	color: #03ACF2;
 }
 section .container li:first-child:hover:after{
 	display: block;
@@ -198,7 +201,7 @@ section .container li:first-child:hover:after{
 	width: 120px;
 	height: 5px;
 	border-radius: 10px;
-	background-color: blue;
+	background-color: #03ACF2;
 	animation: slide 0.5s ease-out;
 }
 @keyframes slide{
