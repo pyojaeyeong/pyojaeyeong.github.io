@@ -159,7 +159,8 @@ section .main a:nth-child(2n){
 section .main{
 	background-image: url(/img/Banner1.png);
 	background-repeat: no-repeat;
-	background-position: 130% 0%;
+	background-position: 130% 70%;
+	position: relative;
 }
 section .container{
 	display: flex;
@@ -269,4 +270,9 @@ section .personnel p:last-child{
 }
 section .personnel .texts{
 	padding-top: 1.1rem;
+}
+.visual{
+	background-image: url(/img/Oval.png);
+	position: absolute;
+	background-color: red;
 }
