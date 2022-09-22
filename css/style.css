@@ -150,6 +150,7 @@ button {
 .learn {
   float: left;
   width: 40%;
+  position: relative;
 }
 
 .learn p {
@@ -162,6 +163,16 @@ button {
   font-size: 48px;
   letter-spacing: 0.035rem;
   color: rgba(57, 57, 57, 1);
+  margin: 0;
+}
+.learn p:last-child::after {
+  position: absolute;
+  top: 9.7rem;
+  left: 8rem;
+  content: "";
+  width: 178px;
+  height: 1px;
+  background-color: #fb9c46;
 }
 
 .choice-language {
