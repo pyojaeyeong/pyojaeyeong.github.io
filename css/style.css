@@ -16,6 +16,11 @@ a {
   color: inherit;
 }
 
+img {
+  padding: 0;
+  background: transparent;
+}
+
 li,
 ol,
 ul {
@@ -30,6 +35,10 @@ button {
   padding: 0;
 }
 
+#wrap {
+  margin: 57px 110px;
+}
+
 .nav-bar {
   width: 100%;
 }
@@ -38,9 +47,9 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 47px;
+  /* margin-top: 47px; */
   position: relative;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 16px;
 }
 
@@ -84,11 +93,12 @@ button {
 }
 
 #container {
-  /* position: absolute; */
+  position: relative;
   background-image: url(/img/Rectangle\ 1.png);
   background-repeat: no-repeat;
   background-size: 450px;
-  background-position: 70% 50%;
+  background-position: 90% 50%;
+  z-index: 1;
 }
 
 .learn-online-languange {
@@ -100,7 +110,7 @@ button {
 
 .tutors p:first-child {
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 600;
   color: #fb9c46;
 }
 
@@ -134,5 +144,52 @@ button {
   color: white;
   padding: 15px 60px;
   border-radius: 10px;
-  font-weight: bold;
+  font-weight: 600;
+}
+
+.learn {
+  float: left;
+  width: 40%;
+}
+
+.learn p {
+  font-weight: 600;
+  color: #fb9c46;
+}
+
+.learn p:nth-child(2n) {
+  font-weight: 600;
+  font-size: 48px;
+  letter-spacing: 0.035rem;
+  color: rgba(57, 57, 57, 1);
+}
+
+.choice-language {
+  padding-top: 15px;
+}
+
+.choice-language p {
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(108, 108, 108, 1);
+  line-height: 200%;
+}
+
+.choice-language img {
+  margin-right: 15px;
+  position: relative;
+}
+
+.choice-language a:last-child {
+  position: absolute;
+  color: #fb9c46;
+  font-weight: 400;
+  font-size: 18px;
+  top: 62.5rem;
+}
+
+.choice-language a:last-child img {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
 }
