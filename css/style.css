@@ -94,11 +94,14 @@ button {
 
 #container {
   position: relative;
-  background-image: url(/img/Rectangle\ 1.png);
-  background-repeat: no-repeat;
-  background-size: 450px;
-  background-position: 90% 50%;
-  z-index: 1;
+  background-image: url(/img/Group\ 6.png), url(/img/bg-japan.png),
+    url(/img/bg-china.png), url(/img/bg-italy.png), url(/img/Mask\ Group.png),
+    url(/img/Rectangle\ 1.png);
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
+    no-repeat;
+  background-size: 900px, 100px, 100px, 100px, 450px, 450px;
+  background-position: 63% -270%, 58% 25%, 90% 10%, 98% 60%, 90% 50%, 90% 50%;
+  /* z-index: 1; */
 }
 
 .learn-online-languange {
