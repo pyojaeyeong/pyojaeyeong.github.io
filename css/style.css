@@ -478,3 +478,19 @@ h4 {
   background-size: 45px;
   background-position: 4.5% 50%;
 }
+
+.education {
+  width: 100%;
+  position: relative;
+}
+
+.edu-description {
+  width: 50%;
+}
+
+.edu-description h6 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 52px;
+  color: #fb9c46;
+}
