@@ -26,6 +26,7 @@ ol,
 ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 button {
@@ -36,7 +37,7 @@ button {
 }
 
 #wrap {
-  margin: 57px 110px;
+  margin: 47px 110px;
 }
 
 .nav-bar {
@@ -51,6 +52,7 @@ button {
   position: relative;
   font-weight: 600;
   font-size: 16px;
+  padding-bottom: 18px;
 }
 
 .site-nav-bar li a {
@@ -64,18 +66,74 @@ button {
 }
 
 .depth-wrap ul {
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
 .depth-wrap li {
-  margin-right: 30px;
+  /* margin: 0 20px; */
+  position: relative;
 }
 
 .depth-wrap li:last-child {
   margin: 0;
 }
 
+.depth a:hover {
+  color: #ff922f;
+}
+
+.depth-wrap li:first-child:hover::after {
+  position: absolute;
+  display: block;
+  left: 28px;
+  content: "";
+  width: 33px;
+  height: 3px;
+  background-color: #ff922f;
+  border-radius: 5px;
+}
+
+.depth-wrap li:nth-child(2n):hover::after {
+  position: absolute;
+  display: block;
+  left: 27px;
+  content: "";
+  width: 49px;
+  height: 3px;
+  background-color: #ff922f;
+  border-radius: 5px;
+}
+
+.depth-wrap li:nth-child(3n):hover::after {
+  position: absolute;
+  display: block;
+  left: 27px;
+  content: "";
+  width: 73px;
+  height: 3px;
+  background-color: #ff922f;
+  border-radius: 5px;
+}
+
+.depth-wrap li:nth-child(4n):hover::after {
+  position: absolute;
+  display: block;
+  left: 29px;
+  content: "";
+  width: 55px;
+  height: 3px;
+  background-color: #ff922f;
+  border-radius: 5px;
+}
+
+.depth-wrap .depth {
+  margin: 0 10px;
+}
+
 .depth-wrap .depth1 {
+  margin: 0 50px 0 20px;
   padding: 8px 5px;
   background-color: #407f55;
   color: #ffffff;
@@ -97,11 +155,9 @@ button {
   background-image: url(/img/Group\ 6.png), url(/img/bg-japan.png),
     url(/img/bg-china.png), url(/img/bg-italy.png), url(/img/Mask\ Group.png),
     url(/img/Rectangle\ 1.png);
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
-    no-repeat;
+  background-repeat: no-repeat;
   background-size: 900px, 100px, 100px, 100px, 450px, 450px;
-  background-position: 63% -270%, 58% 25%, 90% 10%, 98% 60%, 90% 50%, 90% 50%;
-  /* z-index: 1; */
+  background-position: 63% -270%, 58% 25%, 90% 10%, 98% 59%, 90% 50.5%, 90% 50%;
 }
 
 .learn-online-languange {
@@ -146,8 +202,12 @@ button {
   background-color: #058e6e;
   color: white;
   padding: 15px 60px;
-  border-radius: 10px;
+  border-radius: 16px;
   font-weight: 600;
+  box-shadow: rgba(64, 127, 85, 0.08) 0 85px 80px,
+    rgba(64, 127, 85, 0.0521271) 0 25.625px 24.1177px,
+    rgba(64, 127, 85, 0.04) 0 10.6433px 10.0172px,
+    rgba(64, 127, 85, 0.0278729) 0 3.84948px 3.62304px;
 }
 
 .learn {
@@ -161,7 +221,7 @@ button {
   color: #fb9c46;
 }
 
-.learn p:nth-child(2n) {
+.learn h2 {
   font-weight: 600;
   font-size: 48px;
   letter-spacing: 0.035rem;
@@ -190,7 +250,7 @@ button {
 }
 
 .choice-language img {
-  margin-right: 15px;
+  margin-right: 25px;
   position: relative;
 }
 
@@ -206,4 +266,136 @@ button {
   position: absolute;
   justify-content: center;
   align-items: center;
+}
+
+.language::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.find-tutors {
+  width: 100%;
+  padding: 120px 0 120px 0;
+  position: relative;
+  background-image: url(/img/Group\ 15.png);
+  background-repeat: no-repeat;
+  background-position: 110% 150%;
+  background-size: 710px;
+}
+
+.Description-tutors h3 {
+  width: 50%;
+  /* padding-top: 100px; */
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 160%;
+  letter-spacing: 0.035em;
+}
+
+.Description-tutors p {
+  width: 50%;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  color: #6c6c6c;
+  padding-bottom: 40px;
+}
+
+.link-tutors a {
+  margin-right: 38px;
+  padding: 18.5px 24.5px;
+  background-color: #fb9c46;
+  border-radius: 16px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+}
+
+.link-tutors a:nth-child(2n) {
+  background-color: white;
+  color: #fb9c46;
+  border: 3px solid #fb9c46;
+}
+
+.lesson-guide {
+  margin-top: 50px;
+  max-width: 1280px;
+  width: 100%;
+  height: 700px;
+  position: relative;
+  background-image: url(/img/student.png);
+  background-repeat: no-repeat;
+  background-size: 550px;
+  background-position: 0 -20%;
+}
+
+.lesson-sequence {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  float: right;
+}
+
+h4 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 160%;
+  letter-spacing: 0.035em;
+  color: #393939;
+  margin-bottom: 0;
+}
+
+b {
+  font-weight: 600;
+  color: #058e6e;
+}
+
+.lesson-sequence p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  color: #6c6c6c;
+}
+
+.lesson-block {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: rgba(5, 142, 110, 0.14) 0 -2px 128px;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.lesson-block .lesson-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 170%;
+  color: #393939;
+  list-style: none;
+}
+
+.lesson-block ul li {
+  font-weight: 400;
+  font-size: 14px;
+  color: #8d8d8d;
+  list-style: inside;
+}
+
+.lesson-block a {
+  color: #058e6e;
+}
+
+.lesson-content {
+  padding: 20px 0 20px 100px;
+}
+
+.lesson-block {
+  /* content: "";
+  position: absolute; */
+  background-image: url(/img/Vector.png);
+  background-repeat: no-repeat;
+  background-size: 43.33px;
+  background-position: 5% 35%;
 }
