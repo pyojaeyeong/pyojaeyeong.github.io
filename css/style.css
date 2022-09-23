@@ -246,7 +246,6 @@ button {
   font-weight: 400;
   font-size: 14px;
   color: rgba(108, 108, 108, 1);
-  line-height: 200%;
 }
 
 .choice-language img {
@@ -259,7 +258,7 @@ button {
   color: #fb9c46;
   font-weight: 400;
   font-size: 18px;
-  top: 62.5rem;
+  top: 60rem;
 }
 
 .choice-language a:last-child img {
@@ -289,7 +288,6 @@ button {
   /* padding-top: 100px; */
   font-weight: 600;
   font-size: 36px;
-  line-height: 160%;
   letter-spacing: 0.035em;
 }
 
@@ -297,7 +295,6 @@ button {
   width: 50%;
   font-weight: 400;
   font-size: 18px;
-  line-height: 160%;
   color: #6c6c6c;
   padding-bottom: 40px;
 }
@@ -321,34 +318,33 @@ button {
 
 .lesson-guide {
   margin-top: 50px;
-  max-width: 1280px;
   width: 100%;
-  height: 700px;
+  height: 600px;
   position: relative;
   background-image: url(/img/student.png);
   background-repeat: no-repeat;
   background-size: 550px;
-  background-position: 0 -20%;
+  background-position: 0 -180%;
 }
 
 .lesson-sequence {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 50%;
-  float: right;
+  width: 40%;
+  position: absolute;
+  right: 80px;
 }
 
 h4 {
   font-weight: 600;
   font-size: 36px;
-  line-height: 160%;
   letter-spacing: 0.035em;
   color: #393939;
   margin-bottom: 0;
 }
 
-b {
+.lesson-sequence b {
   font-weight: 600;
   color: #058e6e;
 }
@@ -356,7 +352,6 @@ b {
 .lesson-sequence p {
   font-weight: 400;
   font-size: 18px;
-  line-height: 160%;
   color: #6c6c6c;
 }
 
@@ -371,7 +366,6 @@ b {
 .lesson-block .lesson-title {
   font-weight: 600;
   font-size: 16px;
-  line-height: 170%;
   color: #393939;
   list-style: none;
 }
@@ -392,10 +386,95 @@ b {
 }
 
 .lesson-block {
-  /* content: "";
-  position: absolute; */
   background-image: url(/img/Vector.png);
   background-repeat: no-repeat;
   background-size: 43.33px;
   background-position: 5% 35%;
+}
+
+.lesson-guide::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.how-works {
+  width: 100%;
+  position: relative;
+  padding: 0 0 100px;
+  background-image: url(/img/videoimg.png);
+  background-repeat: no-repeat;
+  background-position: 100% 45%;
+}
+
+.curriculum {
+  width: 50%;
+}
+
+.curriculum h5 {
+  font-weight: 600;
+  font-size: 36px;
+  letter-spacing: 0.035em;
+  color: #393939;
+  margin-bottom: 0;
+}
+
+.curriculum b {
+  color: #fb9c46;
+}
+
+.curriculum p {
+  font-weight: 400;
+  font-size: 18px;
+  color: #6c6c6c;
+  margin-bottom: 30px;
+}
+
+.works-block {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: rgba(255, 146, 47, 0.15) 0 4px 357px,
+    rgba(255, 146, 47, 0.075) 0 0.500862px 44.7019px;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.works-block .works-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28.8px;
+  color: #fb9c46;
+  list-style: none;
+}
+
+.works-content li {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22.4px;
+  color: #393939;
+}
+
+.works-content {
+  padding: 15px 0 15px 100px;
+}
+
+.works-block {
+  background-image: url(/img/tutors.png);
+  background-repeat: no-repeat;
+  background-size: 45px;
+  background-position: 4.5% 50%;
+}
+
+.works-block:nth-child(2n) {
+  background-image: url(/img/calender.png);
+  background-repeat: no-repeat;
+  background-size: 45px;
+  background-position: 4.5% 50%;
+}
+
+.works-block:last-child {
+  background-image: url(/img/learn.png);
+  background-repeat: no-repeat;
+  background-size: 45px;
+  background-position: 4.5% 50%;
 }
