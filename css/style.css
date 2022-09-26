@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "DM Sans", "Poppins", sans-serif;
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
@@ -283,7 +283,7 @@ button {
   background-size: 710px;
 }
 
-.Description-tutors h3 {
+.Description-tutors h2 {
   width: 50%;
   /* padding-top: 100px; */
   font-weight: 600;
@@ -336,7 +336,7 @@ button {
   right: 80px;
 }
 
-h4 {
+.lesson-sequence h2 {
   font-weight: 600;
   font-size: 36px;
   letter-spacing: 0.035em;
@@ -411,7 +411,7 @@ h4 {
   width: 50%;
 }
 
-.curriculum h5 {
+.curriculum h2 {
   font-weight: 600;
   font-size: 36px;
   letter-spacing: 0.035em;
@@ -485,12 +485,163 @@ h4 {
 }
 
 .edu-description {
-  width: 50%;
+  float: left;
+  width: 45%;
+  position: relative;
 }
 
-.edu-description h6 {
-  font-weight: 700;
+.edu-description h2 {
+  font-weight: 600;
+  font-style: normal;
   font-size: 36px;
   line-height: 52px;
   color: #fb9c46;
+  margin-bottom: 30px;
+}
+
+.edu-description p {
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 0.3px;
+  color: #90a3b4;
+}
+
+.edu-tutors {
+  float: right;
+  width: 40%;
+  margin-top: 50px;
+}
+
+.edu-tutors i {
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 18px;
+  color: #faad13;
+}
+
+.edu-tutors b {
+  position: absolute;
+  left: 650px;
+  top: 5px;
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 130px;
+  line-height: 169px;
+  letter-spacing: 169px;
+  letter-spacing: 0.3px;
+  color: #fb9c46;
+}
+
+.edu-tutors p {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #90a3b4;
+}
+
+.tutors-slide {
+  padding: 10px 0 10px 0;
+  width: 80%;
+}
+
+.tutors-slide p {
+  margin: 0;
+  text-align: left;
+  margin-left: 70px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #fb9c46;
+}
+
+.tutors-slide p:nth-child(2n) {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #90a3b4;
+}
+
+.tutors-slide {
+  background-image: url(/img/Photo.png);
+  background-repeat: no-repeat;
+  background-size: 56px;
+  background-position: 0;
+}
+
+.slide-btn-next button {
+  position: absolute;
+  right: 0;
+  top: 240px;
+}
+
+.education::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.learn-more {
+  position: relative;
+  margin: 130px 0 130px 0;
+  width: 100%;
+  height: 380px;
+  background-image: url(/img/learnMoreBack.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.learn-more-discription {
+  position: absolute;
+  left: 76px;
+  top: 111px;
+  font-family: "Poppins";
+  color: white;
+  width: 400px;
+  background-image: url(/img/Item.png);
+  background-repeat: no-repeat;
+  background-position: 62% 32%;
+  background-size: 36px;
+}
+.learn-more-discription h2 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: 0.3px;
+  margin-top: 0;
+}
+
+.learn-more-discription p {
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.learn-more-discription a {
+  text-decoration: underline;
+  text-align: center;
+  padding: 10px 10px 10px 160px;
+  background-image: url(/img/Group\ 43.png);
+  background-repeat: no-repeat;
+}
+
+.free-lessons {
+  position: absolute;
+  right: 100px;
+  top: 180px;
+}
+
+.free-lessons a {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.3px;
+  color: #fb9c46;
+  background-color: white;
+  padding: 19px 18px;
+  border-radius: 4px;
 }
