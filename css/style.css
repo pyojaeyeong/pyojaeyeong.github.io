@@ -68,7 +68,7 @@ button {
   height: 0.5px;
 }
 
-.site-nav-bar li a {
+.site-nav-bar li {
   padding: 10px 10px;
 }
 
@@ -101,7 +101,7 @@ button {
   text-transform: uppercase;
 }
 
-.depth::after {
+.depth a::after {
   display: block;
   content: "";
   border-bottom: 3px solid #ff922f;
@@ -109,7 +109,7 @@ button {
   transition: transform 250ms ease-in-out;
 }
 
-.depth:hover::after {
+.depth a:hover::after {
   transform: scaleX(1);
   width: 100%;
 }
