@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 body {
-  font-family: "DM Sans", "Poppins", sans-serif;
+  font-family: "Nunito Sans", "DM Sans", "Poppins", sans-serif;
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
@@ -262,9 +262,16 @@ button {
   color: #fb9c46;
 }
 
+.choice-language span {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #fb9c46;
+}
+
 .choice-language span a {
-  /* display: block; */
-  /* background-color: black; */
   position: absolute;
   right: 30px;
   top: 85px;
