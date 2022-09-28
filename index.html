@@ -5,10 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/mobile.css" media="(max-width: 400px)" />
+    <script
+      src="https://kit.fontawesome.com/4b62dd0042.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/toggle.js" defer></script>
     <title>Totorify</title>
   </head>
   <body>
-    <div id="wrap">
+    <div class="wrap">
       <header class="site-nav-bar">
         <h1 class="logo">
           <a href="" title="Tutorify">Tutorify</a>
@@ -22,6 +28,9 @@
             <li class="depth1"><a href="/">Login</a></li>
             <li class="depth1"><a href="/">Sign Up</a></li>
           </ul>
+          <a href="/" class="nav-toggle-btn">
+            <i class="fa-solid fa-bars"></i>
+          </a>
         </nav>
       </header>
       <main class="learn-online-languange">
@@ -39,6 +48,7 @@
           </div>
           <img src="/img/tutors_online.png" alt="200+ tutors Online" />
         </div>
+        <div class="main-bg"></div>
       </main>
       <div class="language">
         <div class="learn">
@@ -105,7 +115,9 @@
             <a href="/">Find Your Tutors</a>
           </div>
         </div>
-        <img src="/img/1850_lesson.png" alt="more than 1,850 lessons" />
+        <div class="find-bg">
+          <img src="/img/1850_lesson.png" alt="more than 1,850 lessons" />
+        </div>
       </div>
       <div class="lesson-guide">
         <div class="lesson-stage">
@@ -139,6 +151,7 @@
             </div>
           </dl>
         </div>
+        <div class="lesson-bg"></div>
       </div>
       <div class="how-works">
         <div class="curriculum">

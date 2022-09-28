@@ -6,7 +6,6 @@ body {
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
-  width: 1440px;
 }
 
 a {
@@ -35,8 +34,10 @@ button {
   padding: 0;
 }
 
-#wrap {
-  padding: 47px 110px;
+.wrap {
+  width: 1440px;
+  padding: 50px 110px;
+  margin: 0 auto;
 }
 
 .logo a {
@@ -124,13 +125,28 @@ button {
   font-size: 18px;
 }
 
-.learn-online-languange {
+.nav-toggle-btn {
+  position: absolute;
+  right: 30px;
+  top: 10px;
+  font-size: 20px;
+  display: none;
+}
+
+.depth-wrap.active {
+  display: flex;
+}
+
+.main-bg {
+  float: left;
+  width: 50%;
+  height: 400px;
   position: relative;
   background-image: url(/img/bg-japan.png), url(/img/bg-china.png),
     url(/img/bg-italy.png), url(/img/main_men.png), url(/img/Rectangle\ 1.png);
   background-repeat: no-repeat;
   background-size: 100px, 100px, 100px, 450px, 450px;
-  background-position: 58% 25%, 90% 10%, 98% 59%, 90% 50.5%, 90% 50%;
+  background-position: 23% 25%, 90% 10%, 95% 59%, 70% 50.5%, 70% 50%;
   padding: 150px 0;
 }
 
@@ -139,7 +155,9 @@ button {
   position: relative;
 }
 .tutors {
-  max-width: 650px;
+  float: left;
+  width: 50%;
+  padding: 150px 0;
 }
 
 .tutors p:first-child {
@@ -191,13 +209,20 @@ button {
 
 .tutors img {
   position: absolute;
-  left: 510px;
+  left: 730px;
   bottom: 100px;
+  z-index: 1;
+}
+
+.learn-online-languange::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 .learn {
   float: left;
-  width: 40%;
+  width: 45%;
   position: relative;
 }
 
@@ -226,7 +251,7 @@ button {
 
 .choice-language {
   float: left;
-  width: 60%;
+  width: 55%;
   padding-top: 10px;
   position: relative;
 }
@@ -269,7 +294,7 @@ button {
 
 .choice-language span a {
   position: absolute;
-  right: 30px;
+  right: 80px;
   top: 85px;
   padding: 10px 30px 10px 10px;
   background-image: url(/img/Arrow.png);
@@ -289,21 +314,30 @@ button {
 }
 
 .description-tutors {
-  max-width: 650px;
+  float: left;
+  width: 50%;
+  padding: 150px 0;
 }
 
-.find-tutors {
+/* .find-tutors {
   padding: 220px 0 220px 0;
+} */
+
+.find-bg {
+  float: left;
+  width: 50%;
+  height: 500px;
+  padding-top: 60px;
   background-image: url(/img/ellipse.png);
   background-repeat: no-repeat;
-  background-position: 110% 40%;
+  background-position: 0% 50%;
   background-size: 600px;
 }
 
-.find-tutors img {
+.find-bg img {
   position: absolute;
-  right: 280px;
-  top: 100px;
+  left: 620px;
+  top: 60px;
 }
 
 .description-tutors strong {
@@ -338,19 +372,31 @@ button {
   border: 3px solid #fb9c46;
 }
 
+.find-tutors::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 .lesson-guide {
-  /* max-width: 650px; */
-  height: 530px;
+  width: 100%;
   position: relative;
+}
+
+.lesson-bg {
+  float: left;
+  width: 50%;
+  height: 530px;
   background-image: url(/img/student.png);
   background-repeat: no-repeat;
   background-size: 550px;
-  background-position: 0 130%;
+  background-position: 50% 130%;
 }
 
 .lesson-stage {
   max-width: 600px;
   float: right;
+  width: 50%;
 }
 
 .lesson-guide strong {
@@ -400,10 +446,6 @@ button {
   color: #058e6e;
 }
 
-.lesson-content {
-  padding: 20px 0 20px 100px;
-}
-
 .lesson-block {
   background-image: url(/img/check_box.png);
   background-repeat: no-repeat;
@@ -420,9 +462,6 @@ button {
 .how-works {
   position: relative;
   padding: 150px 0 150px;
-  background-image: url(/img/video_deco.png);
-  background-repeat: no-repeat;
-  background-position: 100% 80%;
 }
 
 .curriculum {
@@ -430,11 +469,15 @@ button {
   width: 50%;
 }
 
-.how-works .video {
+.video {
   float: right;
-  margin: 25px 40px 25px 0;
-  width: 497px;
-  height: 414px;
+  width: 50%;
+  text-align: center;
+  padding: 25px 0;
+  background-image: url(/img/video_deco.png);
+  background-repeat: no-repeat;
+  background-position: 92% 100%;
+  background-size: 150px;
 }
 
 .how-works img {
@@ -459,12 +502,6 @@ button {
   font-size: 18px;
   color: #6c6c6c;
   margin-bottom: 30px;
-}
-
-.how-works::after {
-  content: "";
-  display: block;
-  clear: both;
 }
 
 .works-block {
@@ -514,6 +551,12 @@ button {
   background-position: 4.5% 50%;
 }
 
+.how-works::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 .education {
   width: 100%;
   position: relative;
@@ -547,16 +590,9 @@ button {
   width: 40%;
 }
 
-.edu-tutors i {
-  font-weight: 900;
-  font-size: 16px;
-  line-height: 18px;
-  color: #faad13;
-}
-
 .edu-tutors > span {
   position: absolute;
-  left: 680px;
+  left: 810px;
   top: 0;
   font-family: "DM Sans";
   font-weight: 400;
@@ -645,7 +681,7 @@ button {
 .slide-btn-next button {
   position: absolute;
   right: 0;
-  top: 190px;
+  top: 180px;
 }
 
 .education::after {
@@ -682,6 +718,7 @@ button {
 .learn-more-discription p {
   font-weight: 500;
   font-size: 14px;
+  padding: 20px 0 10px 0;
 }
 
 .learn-more-discription a {
@@ -709,7 +746,7 @@ footer {
   padding: 70px;
   background: #f2bf62;
   color: white;
-  height: 500px;
+  /* height: 500px; */
 }
 
 .footer-inner {
@@ -771,14 +808,4 @@ footer > p {
   font-weight: 20px;
   font-size: 16px;
   line-height: 21px;
-}
-
-@media screen and (max-width: 400px) {
-  body {
-    width: 400px;
-  }
-
-  #wrap {
-    padding: 34px 25px;
-  }
 }

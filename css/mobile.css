@@ -1,0 +1,451 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+body {
+  font-family: "Nunito Sans", "DM Sans", "Poppins", sans-serif;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrap {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.site-nav-bar {
+  flex-direction: column;
+}
+
+.depth-wrap {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.depth1 {
+  flex-direction: row;
+}
+
+.nav-toggle-btn {
+  display: block;
+}
+
+.main-bg {
+  display: block;
+  width: 100%;
+  background-size: 60px, 60px, 60px, 250px, 250px;
+  background-position: 18% 30%, 75% 5%, 91% 57%, 60% 50%, 60% 50%;
+  padding: 0;
+}
+
+.tutors {
+  display: block;
+  width: 100%;
+  padding: 0;
+}
+
+.tutors p:first-child {
+  font-size: 16px;
+}
+
+.tutors p::after {
+  position: absolute;
+  top: 1.6rem;
+  left: 9.5rem;
+  content: "";
+  width: 100px;
+  height: 1.5px;
+}
+
+.tutors strong {
+  font-size: 32px;
+}
+
+.lorem {
+  font-size: 14px;
+}
+
+.tutors a {
+  display: block;
+  padding: 20px 30px;
+  border-radius: 16px;
+}
+
+.tutors img {
+  position: absolute;
+  left: 0px;
+  bottom: 60px;
+  z-index: 1;
+  width: 150px;
+}
+
+.learn {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+.learn p {
+  font-size: 16px;
+}
+
+.learn strong {
+  font-weight: 600;
+  font-size: 30px;
+  letter-spacing: 0.035rem;
+  margin: 0;
+}
+
+.learn p:last-child::after {
+  position: absolute;
+  top: 8rem;
+  left: 8rem;
+  content: "";
+  width: 92px;
+}
+
+.choice-language {
+  display: block;
+  width: 100%;
+}
+
+.choice-language p {
+  font-size: 12px;
+  color: #90a3b4;
+  margin-bottom: 30px;
+}
+
+.choice-language ul {
+  flex-wrap: wrap;
+}
+
+.choice-language li:last-child {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #fb9c46;
+}
+
+.choice-language span a {
+  position: absolute;
+  right: 50px;
+  top: 170px;
+}
+
+.find-tutors {
+  padding: 0;
+}
+
+.description-tutors {
+  display: block;
+  width: 100%;
+  padding: 50px 0;
+}
+
+.find-bg {
+  position: relative;
+  padding: 0;
+  display: block;
+  width: 100%;
+  background-image: url(/img/ellipse.png);
+  background-repeat: no-repeat;
+  background-position: 40% 40%;
+  background-size: 400px;
+}
+
+.find-bg img {
+  position: absolute;
+  left: -110px;
+  z-index: 2;
+  width: 300px;
+}
+
+.description-tutors strong {
+  font-size: 30px;
+}
+
+.description-tutors p {
+  font-size: 12px;
+  margin: 30px 0;
+}
+
+.link-tutors a {
+  margin-right: 10px;
+  padding: 18.5px 24.5px;
+  font-size: 12px;
+  color: white;
+}
+
+.link-tutors a:nth-child(2n) {
+  padding: 15px 24.5px;
+  background-color: white;
+  color: #fb9c46;
+  border: 3px solid #fb9c46;
+}
+
+.lesson-guide {
+  width: 100%;
+  position: relative;
+}
+
+.lesson-bg {
+  display: block;
+  width: 100%;
+  height: 530px;
+  background-image: url(/img/student.png);
+  background-repeat: no-repeat;
+  background-size: 350px;
+  background-position: 0 0;
+}
+
+.lesson-stage {
+  display: block;
+  width: 100%;
+}
+
+.lesson-guide strong {
+  font-size: 30px;
+}
+
+.lesson-guide p {
+  text-align: end;
+  font-size: 12px;
+}
+
+.lesson-block {
+  padding: 10px 0;
+  margin-bottom: 25px;
+}
+
+.lesson-block dt {
+  margin-left: 60px;
+  font-size: 12px;
+}
+
+.lesson-block dd {
+  margin-left: 60px;
+  font-size: 10px;
+}
+
+.lesson-block {
+  width: 330px;
+  background-size: 28.35px;
+  background-position: 5% 35%;
+}
+
+.how-works {
+  position: relative;
+  padding: 0;
+}
+
+.curriculum {
+  display: block;
+  width: 100%;
+}
+
+.video {
+  display: block;
+  width: 100%;
+  height: 300px;
+  padding: 0;
+  background-position: 95% 90%;
+  background-size: 100px;
+}
+
+.video img {
+  width: 300px;
+}
+
+.curriculum strong {
+  font-size: 30px;
+}
+
+.curriculum p {
+  font-size: 12px;
+  margin-bottom: 30px;
+  color: #90a3b4;
+}
+
+.works-block {
+  width: 330px;
+  padding: 5px 0;
+  border-radius: 16px;
+  margin-bottom: 25px;
+}
+
+.works-block dt {
+  margin-left: 80px;
+  font-size: 16px;
+}
+
+.works-block dd {
+  margin-left: 80px;
+  font-size: 12px;
+}
+
+.works-block {
+  background-size: 30px;
+  background-position: 4.5% 50%;
+}
+
+.works-block:nth-child(2n) {
+  background-size: 30px;
+  background-position: 4.5% 50%;
+}
+
+.works-block:last-child {
+  background-size: 30px;
+  background-position: 4.5% 50%;
+}
+
+.education {
+  width: 100%;
+  position: relative;
+  padding: 50px 0;
+}
+
+.edu-description {
+  display: block;
+  width: 100%;
+}
+
+.edu-description strong {
+  font-size: 30px;
+}
+
+.edu-description p {
+  font-size: 12px;
+  padding: 10px 0;
+}
+
+.edu-tutors {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+.edu-tutors > span {
+  position: absolute;
+  left: 0px;
+  top: -80px;
+  font-size: 60px;
+}
+
+.tutors-grade {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: middle;
+  position: relative;
+}
+
+.edu-tutors p {
+  display: block;
+  font-style: italic;
+  font-size: 12px;
+  margin-left: 20px;
+}
+
+.tutors-slide {
+  padding: 10px 0 10px 0;
+  width: 100%;
+}
+
+.tutors-slide p {
+  margin: 0;
+  text-align: left;
+  margin-left: 80px;
+  font-size: 10px;
+}
+
+.tutors-slide p:nth-child(2n) {
+  font-size: 8px;
+  color: #90a3b4;
+}
+
+.tutors-slide {
+  background-size: 37px;
+  background-position: 5%;
+}
+
+.slide-btn-next button {
+  position: absolute;
+  right: 20px;
+  top: 140px;
+  width: 19px;
+}
+
+.learn-more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  max-width: 400px;
+  position: relative;
+  background-size: cover;
+  height: 380px;
+}
+
+.learn-more-discription {
+  width: 400px;
+  text-align: center;
+}
+.learn-more-discription strong {
+  font-size: 25px;
+}
+
+.learn-more-discription p {
+  font-size: 12px;
+}
+
+.learn-more-discription a {
+  text-align: center;
+  padding: 10px 10px 10px 160px;
+}
+
+.free-lessons a {
+  font-size: 16px;
+  text-align: center;
+  padding: 19px 18px;
+}
+
+footer {
+  margin-top: 50px;
+  padding: 70px;
+}
+
+.footer-inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.tutorify-sns p:first-child {
+  font-size: 24px;
+}
+
+.tutorify-sns p:nth-child(2n) {
+  font-size: 12px;
+}
+
+.menu-title {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.menu-title ul li a {
+  display: none;
+}
+
+footer ul li {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+footer > p {
+  margin-top: 100px;
+  font-weight: 70px;
+  font-size: 16px;
+  line-height: 21px;
+}
