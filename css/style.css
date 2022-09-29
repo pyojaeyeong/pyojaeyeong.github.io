@@ -709,6 +709,8 @@ button {
 }
 
 footer {
+  margin: 0 auto;
+  min-width: 1440px;
   background: #f2bf62;
   color: white;
 }
