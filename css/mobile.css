@@ -28,7 +28,11 @@ body {
   flex-direction: row;
 }
 
-.nav-toggle-btn {
+.toggle {
+  display: block;
+}
+
+.main-nav.active {
   display: block;
 }
 
@@ -126,12 +130,6 @@ body {
   font-size: 18px;
   line-height: 25px;
   color: #fb9c46;
-}
-
-.choice-language span a {
-  position: absolute;
-  right: 50px;
-  top: 170px;
 }
 
 .find-tutors {

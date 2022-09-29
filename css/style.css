@@ -125,16 +125,16 @@ button {
   font-size: 18px;
 }
 
-.nav-toggle-btn {
+.toggle {
   position: absolute;
   right: 30px;
   top: 10px;
-  font-size: 20px;
+  font-size: 25px;
   display: none;
 }
 
-.depth-wrap.active {
-  display: flex;
+.main-wrap.active {
+  display: block;
 }
 
 .main-bg {
@@ -277,26 +277,11 @@ button {
 }
 
 .choice-language li:last-child {
+  position: relative;
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
   color: #fb9c46;
-}
-
-.choice-language span {
-  font-family: "Nunito Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 25px;
-  color: #fb9c46;
-}
-
-.choice-language span a {
-  position: absolute;
-  right: 80px;
-  top: 85px;
-  padding: 10px 30px 10px 10px;
   background-image: url(/img/Arrow.png);
   background-repeat: no-repeat;
   background-position: 100%;
@@ -318,10 +303,6 @@ button {
   width: 50%;
   padding: 150px 0;
 }
-
-/* .find-tutors {
-  padding: 220px 0 220px 0;
-} */
 
 .find-bg {
   float: left;

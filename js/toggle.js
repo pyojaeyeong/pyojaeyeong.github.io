@@ -1,6 +1,6 @@
-const toggleBtn = document.querySelector(".nav-toggle-btn");
-const menu = document.querySelector(".depth-wrap");
+const toggle = document.querySelector(".toggle");
+const menu = document.querySelector(".main-wrap");
 
-toggleBtn.addEventListener("click", () => {
+toggle.addEventListener("click", () => {
   menu.classList.toggle("active");
 });
