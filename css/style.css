@@ -97,17 +97,23 @@ button {
   width: 100%;
 }
 
-.depth-wrap .depth1 {
-  margin: 0 30px;
-  padding: 8px 20px;
+.register {
+  display: flex;
+}
+
+.register p:first-child a {
+  padding: 8px 30px;
+  margin-right: 30px;
   background-color: #407f55;
   color: #ffffff;
   border-radius: 5px;
 }
 
-.depth-wrap .depth1:nth-child(2n) {
+.register p:last-child a {
   background-color: #fb9c46;
-  padding: 8px 10px;
+  padding: 8px 20px;
+  color: #ffffff;
+  border-radius: 5px;
 }
 
 .logo {
@@ -129,12 +135,35 @@ button {
   width: 50%;
   height: 400px;
   position: relative;
-  background-image: url(/img/bg-japan.png), url(/img/bg-china.png),
-    url(/img/bg-italy.png), url(/img/main_men.png), url(/img/Rectangle\ 1.png);
+  background-image: url(/img/tutors_online복사.png), url(/img/bg-japan.png),
+    url(/img/bg-china.png), url(/img/bg-italy.png), url(/img/main_men.png),
+    url(/img/Rectangle\ 1.png);
   background-repeat: no-repeat;
-  background-size: 100px, 100px, 100px, 450px, 450px;
-  background-position: 23% 25%, 90% 10%, 95% 59%, 70% 50.5%, 70% 50%;
+  background-size: 200px, 100px, 100px, 100px, 450px, 450px;
+  background-position: 15% 70%, 23% 25%, 90% 10%, 95% 59%, 70% 50.5%, 70% 50%;
   padding: 150px 0;
+}
+
+.main-bg p {
+  position: absolute;
+  bottom: 220px;
+  left: 110px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: black;
+}
+
+.main-bg span {
+  position: absolute;
+  bottom: 205px;
+  left: 220px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
 }
 
 .learn-online-languange {
@@ -296,14 +325,32 @@ button {
   padding-top: 60px;
   background-image: url(/img/ellipse.png);
   background-repeat: no-repeat;
-  background-position: 0% 50%;
+  background-position: 100% 50%, 0% 50%;
   background-size: 600px;
 }
 
-.find-bg img {
+.find-bg p {
   position: absolute;
-  left: 620px;
-  top: 60px;
+  top: 190px;
+  right: 460px;
+  padding: 25px 35px;
+  text-align: center;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: rgba(251, 156, 70, 0.23) 0 4.89348px 65.7901px,
+    rgba(251, 156, 70, 0.0583613) 0 1.56768px 10.0499px,
+    rgba(251, 156, 70, 0.0811701) 0 0.723833px 9.51242px;
+  color: #fb9c46;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 13px;
+  font-style: normal;
+}
+
+.find-bg p span {
+  font-weight: 400;
+  color: #6c6c6c;
+  line-height: 15px;
 }
 
 .description-tutors strong {
@@ -333,6 +380,7 @@ button {
 }
 
 .link-tutors a:nth-child(2n) {
+  padding: 14.5px 24.5px;
   background-color: white;
   color: #fb9c46;
   border: 3px solid #fb9c46;
@@ -553,6 +601,10 @@ button {
 .edu-tutors {
   float: right;
   width: 45%;
+  background-image: url(/img/“.png);
+  background-repeat: no-repeat;
+  background-size: 40px;
+  background-position: 0% 0%;
 }
 
 .edu-tutors > span {
@@ -573,15 +625,13 @@ button {
   overflow: hidden;
   vertical-align: middle;
   position: relative;
-  margin-left: 70px;
-}
-
-.tutors-grade span {
+  margin-left: 50px;
+  margin-top: 5px;
   background-image: url(/img/star_grade.png);
   background-position: 100px 0;
+  background-size: 100px;
   width: 100px;
   height: 18px;
-  background-size: 100px;
   position: relative;
   overflow: hidden;
   display: inline-block;
@@ -589,7 +639,7 @@ button {
   content: "";
 }
 
-.tutors-grade span::after {
+.tutors-grade:after {
   background-image: url(/img/star_grade.png);
   background-position: 100px -20px;
   width: 100px;
@@ -600,6 +650,11 @@ button {
   left: 0;
   bottom: 0;
   content: "";
+}
+
+.tutors-grade span {
+  position: absolute;
+  right: -10000000000000px;
 }
 
 .edu-tutors p {
@@ -709,21 +764,47 @@ button {
 }
 
 footer {
-  margin: 0 auto;
-  min-width: 1440px;
   background: #f2bf62;
   color: white;
 }
 
+.foo-flex {
+  display: flex;
+  justify-content: space-around;
+  padding: 100px 70px 150px 70px;
+}
+
+/* .tutorify-sns {
+  padding-top: 100px;
+  margin: 0;
+} */
+
+.tutorify-sns ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.tutorify-sns a {
+  display: block;
+}
+
 .footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  /* padding: 70px; */
+  gap: 50px;
+}
+/* .footer-inner {
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
-  margin-top: 50px;
   padding: 70px;
-}
+} */
 
-.tutorify-sns p:first-child {
+/* .tutorify-sns p:first-child {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
@@ -747,6 +828,10 @@ footer {
   font-style: normal;
   font-size: 16px;
   line-height: 28px;
+} */
+
+.foo-un {
+  display: block;
 }
 
 .accordion {
@@ -771,8 +856,8 @@ footer ul li {
   line-height: 250%;
 }
 
-footer > p {
-  margin-top: 230px;
+.foo-un p {
+  padding-bottom: 100px;
   font-style: normal;
   text-align: center;
   font-weight: 20px;
