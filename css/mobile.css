@@ -11,7 +11,8 @@ body {
 .wrap {
   max-width: 400px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 .site-nav-bar {
@@ -49,6 +50,13 @@ body {
   padding: 0;
 }
 
+.learn-online-languange {
+  width: 100%;
+  position: relative;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
 .tutors {
   display: block;
   width: 100%;
@@ -69,7 +77,7 @@ body {
 }
 
 .tutors strong {
-  font-size: 32px;
+  font-size: 30px;
 }
 
 .lorem {
@@ -90,6 +98,12 @@ body {
   width: 150px;
 }
 
+.language {
+  width: 100%;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
 .learn {
   display: block;
   width: 100%;
@@ -97,7 +111,7 @@ body {
 }
 
 .learn p {
-  font-size: 16px;
+  font-size: 12px;
 }
 
 .learn strong {
@@ -109,8 +123,8 @@ body {
 
 .learn p:last-child::after {
   position: absolute;
-  top: 8rem;
-  left: 8rem;
+  top: 6.8rem;
+  left: 6rem;
   content: "";
   width: 92px;
 }
@@ -121,7 +135,7 @@ body {
 }
 
 .choice-language p {
-  font-size: 12px;
+  font-size: 10px;
   color: #90a3b4;
   margin-bottom: 30px;
 }
@@ -138,7 +152,9 @@ body {
 }
 
 .find-tutors {
-  padding: 0;
+  width: 100%;
+  padding: 0 10px;
+  margin: 0 auto;
 }
 
 .description-tutors {
@@ -152,21 +168,19 @@ body {
   padding: 0;
   display: block;
   width: 100%;
-  background-image: url(/img/ellipse.png);
-  background-repeat: no-repeat;
   background-position: 40% 40%;
   background-size: 400px;
 }
 
 .find-bg img {
   position: absolute;
-  left: -110px;
+  left: -90px;
   z-index: 2;
   width: 300px;
 }
 
 .description-tutors strong {
-  font-size: 30px;
+  font-size: 28px;
 }
 
 .description-tutors p {
@@ -190,6 +204,8 @@ body {
 
 .lesson-guide {
   width: 100%;
+  padding: 0 10px;
+  margin: 0 auto;
   position: relative;
 }
 
@@ -199,7 +215,7 @@ body {
   height: 530px;
   background-image: url(/img/student.png);
   background-repeat: no-repeat;
-  background-size: 350px;
+  background-size: 400px;
   background-position: 0 0;
 }
 
@@ -218,6 +234,7 @@ body {
 }
 
 .lesson-block {
+  margin: 0 auto;
   padding: 10px 0;
   margin-bottom: 25px;
 }
@@ -240,7 +257,8 @@ body {
 
 .how-works {
   position: relative;
-  padding: 0;
+  padding: 0 10px;
+  margin: 0 auto;
 }
 
 .curriculum {
@@ -272,6 +290,7 @@ body {
 }
 
 .works-block {
+  margin: 0 auto;
   width: 330px;
   padding: 5px 0;
   border-radius: 16px;
@@ -306,7 +325,8 @@ body {
 .education {
   width: 100%;
   position: relative;
-  padding: 50px 0;
+  padding: 0 10px;
+  margin: 0 auto;
 }
 
 .edu-description {
@@ -374,27 +394,22 @@ body {
 
 .slide-btn-next button {
   position: absolute;
-  right: 20px;
+  right: 50px;
   top: 140px;
   width: 19px;
 }
 
 .learn-more {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+  background-image: url(/img/more_bg.png);
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0;
-  margin: 0;
-  max-width: 400px;
-  position: relative;
-  background-size: cover;
-  height: 380px;
 }
 
-.learn-more-discription {
-  width: 400px;
-  text-align: center;
-}
 .learn-more-discription strong {
   font-size: 25px;
 }
@@ -415,13 +430,16 @@ body {
 }
 
 footer {
-  margin-top: 50px;
-  padding: 70px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .footer-inner {
   display: flex;
   flex-direction: column;
+  margin-top: 100px;
+  padding: 50px;
 }
 
 .tutorify-sns p:first-child {
@@ -447,8 +465,7 @@ footer ul li {
 }
 
 footer > p {
-  margin-top: 100px;
-  font-weight: 70px;
+  padding-bottom: 50px;
+  margin: 0;
   font-size: 16px;
-  line-height: 21px;
 }

@@ -361,7 +361,6 @@ button {
 }
 
 .lesson-stage {
-  max-width: 600px;
   float: right;
   width: 50%;
 }
@@ -673,7 +672,6 @@ button {
 .learn-more-discription {
   font-family: "Poppins";
   color: white;
-  width: 400px;
 }
 .learn-more-discription strong {
   font-weight: 600;
@@ -709,17 +707,16 @@ button {
 }
 
 footer {
-  margin-top: 50px;
-  padding: 70px;
   background: #f2bf62;
   color: white;
-  /* height: 500px; */
 }
 
 .footer-inner {
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
+  margin-top: 50px;
+  padding: 70px;
 }
 
 .tutorify-sns p:first-child {
