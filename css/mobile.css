@@ -17,12 +17,13 @@ body {
 
 .logo a {
   position: absolute;
-  left: 20px;
-  top: 0;
+  left: 0;
+  top: 5px;
 }
 
 .site-nav-bar {
   flex-direction: column;
+  padding: 15px 10px;
 }
 
 .depth-wrap {
