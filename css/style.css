@@ -530,7 +530,7 @@ button {
 
 .edu-description {
   float: left;
-  width: 45%;
+  width: 55%;
   position: relative;
 }
 
@@ -552,7 +552,7 @@ button {
 
 .edu-tutors {
   float: right;
-  width: 40%;
+  width: 45%;
 }
 
 .edu-tutors > span {
@@ -573,6 +573,7 @@ button {
   overflow: hidden;
   vertical-align: middle;
   position: relative;
+  margin-left: 70px;
 }
 
 .tutors-grade span {
@@ -617,7 +618,8 @@ button {
 }
 
 .tutors-slide p {
-  margin: 0;
+  display: block;
+  /* margin: 0; */
   text-align: left;
   margin-left: 70px;
   font-family: "DM Sans";
@@ -637,6 +639,7 @@ button {
 }
 
 .tutors-slide {
+  position: relative;
   background-image: url(/img/tutor_photo.png);
   background-repeat: no-repeat;
   background-size: 56px;
@@ -646,7 +649,7 @@ button {
 .slide-btn-next button {
   position: absolute;
   right: 0;
-  top: 180px;
+  top: 20px;
 }
 
 .education::after {
@@ -706,7 +709,6 @@ button {
 }
 
 footer {
-  width: 100%;
   background: #f2bf62;
   color: white;
 }
