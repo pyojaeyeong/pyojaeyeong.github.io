@@ -706,6 +706,7 @@ button {
 }
 
 footer {
+  width: 100%;
   background: #f2bf62;
   color: white;
 }
