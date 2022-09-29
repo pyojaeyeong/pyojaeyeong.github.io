@@ -745,12 +745,14 @@ footer {
   line-height: 28px;
 }
 
-.menu-title {
+.accordion {
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 23px;
+  color: white;
+  border-bottom: 1px solid white;
 }
 
 footer ul li {

@@ -450,12 +450,13 @@ footer {
   font-size: 12px;
 }
 
-.menu-title {
+.accordion {
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 700;
+  position: relative;
 }
 
-.menu-title ul li a {
+.accordion ul li a {
   display: none;
 }
 
@@ -468,4 +469,14 @@ footer > p {
   padding-bottom: 50px;
   margin: 0;
   font-size: 16px;
+}
+
+.accordion {
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.acc_menu {
+  overflow: hidden;
+  display: none;
 }
