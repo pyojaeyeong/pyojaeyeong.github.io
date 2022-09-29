@@ -70,18 +70,8 @@ button {
   align-items: center;
 }
 
-.depth-wrap ul {
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
 .depth-wrap li {
   position: relative;
-}
-
-.depth-wrap li:last-child {
-  margin: 0;
 }
 
 .depth a:hover,
@@ -131,10 +121,6 @@ button {
   top: 10px;
   font-size: 25px;
   display: none;
-}
-
-.main-wrap.active {
-  display: block;
 }
 
 .main-bg {

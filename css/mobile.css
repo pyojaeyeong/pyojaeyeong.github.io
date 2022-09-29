@@ -22,17 +22,22 @@ body {
   display: none;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
-.depth1 {
-  flex-direction: row;
+.depth-wrap .depth1 {
+  margin-bottom: 5px;
 }
 
-.toggle {
+.depth-wrap .depth1:nth-child(2n) {
+  padding: 7px 0;
+}
+
+.depth-wrap.active {
   display: block;
 }
 
-.main-nav.active {
+.toggle {
   display: block;
 }
 
