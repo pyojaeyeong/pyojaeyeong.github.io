@@ -254,15 +254,13 @@ button {
   align-items: center;
 }
 
-.choice-language li {
-  padding-right: 25px;
-}
-
 .choice-language li a {
   display: block;
+  padding: 1rem;
 }
 
 .choice-language li:last-child {
+  display: block;
   position: relative;
   font-weight: 400;
   font-size: 18px;
@@ -270,7 +268,7 @@ button {
   color: #fb9c46;
   background-image: url(/img/Arrow.png);
   background-repeat: no-repeat;
-  background-position: 100%;
+  background-position: 110%;
 }
 
 .language::after {

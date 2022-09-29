@@ -151,10 +151,7 @@ body {
 }
 
 .choice-language li:last-child {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 25px;
-  color: #fb9c46;
+  background-position: 110% 47%;
 }
 
 .find-tutors {
