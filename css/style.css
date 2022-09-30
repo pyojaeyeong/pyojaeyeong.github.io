@@ -744,11 +744,8 @@ button {
 }
 
 .learn-more-discription a {
+  display: inline-block;
   text-decoration: underline;
-  text-align: center;
-  padding: 10px 10px 10px 160px;
-  background-image: url(/img/Group\ 43.png);
-  background-repeat: no-repeat;
 }
 
 .free-lessons a {
@@ -774,11 +771,6 @@ footer {
   padding: 100px 70px 150px 70px;
 }
 
-/* .tutorify-sns {
-  padding-top: 100px;
-  margin: 0;
-} */
-
 .tutorify-sns ul {
   display: flex;
   justify-content: center;
@@ -794,41 +786,8 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  /* padding: 70px; */
   gap: 50px;
 }
-/* .footer-inner {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  padding: 70px;
-} */
-
-/* .tutorify-sns p:first-child {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
-}
-
-.tutorify-sns ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.tutorify-sns ul a {
-  display: block;
-}
-
-.tutorify-sns p:nth-child(2n) {
-  font-family: "DM Sans";
-  font-weight: 400;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 28px;
-} */
 
 .foo-un {
   display: block;
