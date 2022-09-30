@@ -50,6 +50,11 @@ body {
   position: absolute;
   top: 0;
   right: 50px;
+  display: none;
+}
+
+.register.active {
+  display: flex;
 }
 
 .register p:first-child a {
@@ -221,11 +226,13 @@ body {
 }
 
 .find-bg p {
+  width: 50px;
+  display: block;
   margin: 0;
   position: absolute;
-  top: 150px;
-  left: 50px;
-  padding: 0;
+  top: 180px;
+  left: 20px;
+  padding: 8px 10px;
   text-align: center;
   font-size: 10px;
   background-color: white;

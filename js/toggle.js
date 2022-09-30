@@ -1,8 +1,10 @@
 const toggle = document.querySelector(".toggle");
 const menu = document.querySelector(".depth-wrap");
+const regi = document.querySelector(".register");
 
 toggle.addEventListener("click", () => {
   menu.classList.toggle("active");
+  regi.classList.toggle("active");
 });
 
 var acc = document.getElementsByClassName("accordion");
