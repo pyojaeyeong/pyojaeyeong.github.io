@@ -283,6 +283,14 @@ select option[value=""][disabled] {
   margin: 0 auto;
 }
 
+.tutors-evaluation li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin: 40px 0;
+}
+
 .tutors-introduction {
   width: 393px;
   height: 574.75px;
@@ -495,8 +503,154 @@ select option[value=""][disabled] {
     rgba(0, 0, 0, 0.0754306) 0 -0.608097px 7.73152px,
     rgba(0, 0, 0, 0.0527031) 0 -0.240442px 3.05705px;
   border-radius: 10px;
+  padding: 0 20px;
 }
 
 .greetings-btn {
   text-align: center;
+}
+
+.greetings-btn button {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 27px;
+  color: #979797;
+  padding: 10px;
+}
+
+.greetings-btn button:hover,
+.greetings-btn button:active {
+  color: #ff922f;
+}
+
+.greetings-btn button::after {
+  display: block;
+  content: "";
+  border-bottom: 3px solid #ff922f;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+
+.greetings-btn button:hover::after {
+  transform: scaleX(1);
+  width: 100%;
+}
+
+.tutors-video {
+  position: relative;
+}
+
+.description {
+  display: block;
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.description strong {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 27px;
+  color: black;
+}
+
+.description p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #979797;
+  padding: 10px 0;
+}
+
+.description a {
+  display: inline-block;
+  position: absolute;
+  right: 5px;
+  bottom: -40px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  padding: 10px;
+  background-color: #058e6e;
+  border-radius: 7px;
+  text-align: center;
+}
+
+.more-link a {
+  display: block;
+  width: 186px;
+  margin: 100px auto;
+  text-align: center;
+  font-weight: 600;
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 24px;
+  background-color: #fb9c46;
+  border-radius: 7px;
+  padding: 10px;
+}
+
+footer {
+  background: #f2bf62;
+  color: white;
+}
+
+.foo-flex {
+  display: flex;
+  justify-content: space-around;
+  padding: 100px 70px 150px 70px;
+}
+
+.tutorify-sns ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.tutorify-sns a {
+  display: block;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.foo-un {
+  display: block;
+}
+
+.accordion {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+footer ul li {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.footer-menu li {
+  line-height: 250%;
+}
+
+.foo-un p {
+  padding-bottom: 100px;
+  font-style: normal;
+  text-align: center;
+  font-weight: 20px;
+  font-size: 16px;
+  line-height: 21px;
 }
