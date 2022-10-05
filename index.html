@@ -5,238 +5,338 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/mobile.css" media="(max-width: 400px)" />
-    <script
-      src="https://kit.fontawesome.com/4b62dd0042.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="/js/toggle.js" defer></script>
-    <title>Totorify</title>
+    <title>Document</title>
   </head>
   <body>
     <div class="wrap">
-      <header class="site-nav-bar">
-        <h1 class="logo">
-          <a href="/" title="Tutorify">Tutorify</a>
-        </h1>
-        <nav class="main-nav">
-          <ul class="depth-wrap">
-            <li class="depth"><a href="/">Home</a></li>
-            <li class="depth"><a href="/">Lessons</a></li>
-            <li class="depth"><a href="/">Find Tutors</a></li>
-            <li class="depth"><a href="/">About Us</a></li>
-          </ul>
-          <div>
-            <a href="/" class="toggle" onclick="return false;">
-              <i class="fa-solid fa-bars"></i>
-            </a>
+      <header>
+        <div class="inner-header">
+          <h1 class="logo">
+            <a href="/" title="Tutorify">Tutorify</a>
+          </h1>
+          <nav class="main-nav">
+            <ul class="depth-wrap">
+              <li class="depth"><a href="/">Home</a></li>
+              <li class="depth"><a href="/">Lessons</a></li>
+              <li class="depth"><a href="/">Find Tutors</a></li>
+              <li class="depth"><a href="/">About Us</a></li>
+            </ul>
+            <div>
+              <a href="/" class="toggle" onclick="return false;">
+                <i class="fa-solid fa-bars"></i>
+              </a>
+            </div>
+          </nav>
+          <div class="register">
+            <p><a href="/">Login</a></p>
+            <p><a href="/">Sign Up</a></p>
           </div>
-        </nav>
-        <div class="register">
-          <p><a href="/">Login</a></p>
-          <p><a href="/">Sign Up</a></p>
         </div>
       </header>
-      <main class="learn-online-languange">
-        <div class="tutors">
-          <p>We are The Best</p>
-          <strong>
-            Learn Forme Home With <span>The Best</span> Online Languange Tutors
-          </strong>
-          <p class="lorem">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id
-            interdum dui molllis. Suspendisse nulla :
-          </p>
-          <a href="/">Try Free Lessons</a>
+      <div class="search">
+        <div class="tutors-search">
+          <input type="search" placeholder="Lessons Name" />
+          <input type="search" placeholder="Tutor Name" />
+          <button>Search</button>
         </div>
-        <div class="main-bg">
-          <p>200+ tutors online</p>
-          <span>+3</span>
-        </div>
-      </main>
-      <div class="language">
-        <div class="learn">
-          <p>What do you want to learn ?</p>
-          <strong>What We Offer</strong>
-          <p>I want to learn</p>
-        </div>
-        <div class="choice-language">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Donec urna
-            nec faucibus ridiculus placerat ipsum. Volutpat eget ut vitae amet
-            ullamcorper et, ante venenatis.
-          </p>
-          <ul>
-            <li>
-              <a href="/">
-                <img src="/img/france.png" alt="Click to learn French" />
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <img src="/img/china.png" alt="Click to learn Chinese" />
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <img src="/img/germany.png" alt="Click to learn German" />
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <img src="/img/japan.png" alt="Click to learn Japanese" />
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <img src="/img/russia.png" alt="Click to learn Russian" />
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <img src="/img/italy.png" alt="Click to learn Italian" />
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <img src="/img/spain.png" alt="Click to learn Spanish" />
-              </a>
-            </li>
-            <li>
-              <a href="/">View All</a>
-            </li>
-          </ul>
-        </div>
+        <select name="popularLesson" id="popularLesson" class="popular-tutors">
+          <option value="" disabled selected>Popular Lesson</option>
+          <option value="Brooklyn Simmons">Brooklyn Simmons</option>
+          <option value="Theresa Webb">Theresa Webb</option>
+          <option value="Kathryn Murphy">Kathryn Murphy</option>
+          <option value="Marvin Mckinney">Marvin McKinney</option>
+        </select>
       </div>
-      <div class="find-tutors">
-        <div class="description-tutors">
-          <strong>Purchase your awesome lessons and find your tutors</strong>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem
-            habitant a tincidunt cras accumsan integer suscipit. Libero accumsan
-            eget aliquet.
-          </p>
-          <div class="link-tutors">
-            <a href="/">Book Your Lessons</a>
-            <a href="/">Find Your Tutors</a>
-          </div>
-        </div>
-        <div class="find-bg">
-          <p>1850+<br /><span>Lessons</span></p>
-        </div>
+      <div class="lesson-types-btn">
+        <p><a href="/">Also speaks</a></p>
+        <ul>
+          <li>
+            <button>From</button>
+          </li>
+          <li>
+            <button>Price</button>
+          </li>
+          <li>
+            <button>Native speaker</button>
+          </li>
+          <li>
+            <button>Teacher types</button>
+          </li>
+          <li>
+            <button>Category</button>
+          </li>
+          <li>
+            <button>instant lesson</button>
+          </li>
+          <li>
+            <button>Availabillity</button>
+          </li>
+          <li>
+            <button>Auto-accept</button>
+          </li>
+        </ul>
       </div>
-      <div class="lesson-guide">
-        <div class="lesson-stage">
-          <strong>What Will You <span>Get</span>?</strong>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id
-            interdum dui molllis. Suspendisse nulla :
-          </p>
-          <dl>
-            <div class="lesson-block">
-              <dt>1-on-1 lessons in more than 150 languages</dt>
-              <dd>
-                Learn from certified teachers with proven experience...
-                <a>read more</a>
-              </dd>
-            </div>
-            <div class="lesson-block">
-              <dt>Practice for free with the italki community</dt>
-              <dd>
-                Develop your language skills by building connections with
-                others...
-                <a>read more</a>
-              </dd>
-            </div>
-            <div class="lesson-block">
-              <dt>Take learning beyond the classroom</dt>
-              <dd>
-                Learn from certified teachers with proven experience...
-                <a>read more</a>
-              </dd>
-            </div>
-          </dl>
-        </div>
-        <div class="lesson-bg"></div>
-      </div>
-      <div class="how-works">
-        <div class="curriculum">
-          <strong>Here's how it <span>works</span></strong>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem
-            habitant a tincidunt cras accumsan integer suscipit. Libero accumsan
-            eget aliquet.
-          </p>
-          <dl>
-            <div class="works-block">
-              <dt>Find a tutor</dt>
-              <dd>
-                Choose your ideal teacher from over 10,000 qualified language
-                tutors.
-              </dd>
-            </div>
+      <div class="tutors-list">
+        <ul class="tutors-evaluation">
+          <li>
+            <div class="tutors-Introduction">
+              <div class="brooklyn-img"></div>
+              <div class="tutors-description">
+                <div class="tutor-name">
+                  <div>
+                    <a href="/">20 Lessons</a>
+                    <p class="tutor-names">Brooklyn Simmons</p>
+                    <p class="community-tutor">Community Tutor</p>
+                  </div>
+                  <div>
+                    <p class="grade">
+                      <span class="tutors-grade">
+                        <span>4.9 Rating</span>
+                        <em>4.9 Rating</em>
+                      </span>
+                    </p>
+                  </div>
+                </div>
+                <div class="speaks">
+                  <dl>
+                    <dt>Speaks</dt>
+                    <dd>English - <span>Native</span></dd>
+                    <dd>Spanish - <span>Native</span></dd>
+                  </dl>
+                </div>
+                <div class="trial">
+                  <dl>
+                    <div>
+                      <dt>30 Min trial</dt>
+                      <dd>IDR - 85.730.10</dd>
+                    </div>
 
-            <div class="works-block">
-              <dt>Book a lesson</dt>
-              <dd>Select a lesson time and add it to their calendar.</dd>
+                    <div>
+                      <dt>Hourly Rate from</dt>
+                      <dd>IDR - 485.730.10</dd>
+                    </div>
+                  </dl>
+                </div>
+                <div class="tutors-btn">
+                  <p>120 Students</p>
+                  <a href="/">Book</a>
+                </div>
+              </div>
             </div>
+            <div class="tutors-Greetings">
+              <button>Profile</button>
+              <button>Schedule</button>
+              <p>
+                <img
+                  src="/img/brooklyn_video_img.png"
+                  alt="Click to play the Brooklyn Simmons tutor greeting"
+                />
+              </p>
+              <p>Description</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Feugiat aliquam integer sit mauris sit. Pellentesque urna,
+                adipisicing at aliquam tempor non. Lectus bibendum sollicitudin
+                aliquet id...
+              </p>
+              <a href="/">Read more</a>
+            </div>
+          </li>
+          <li>
+            <div class="tutors-Introduction">
+              <div class="theresa-img"></div>
+              <div class="tutors-description">
+                <div class="tutor-name">
+                  <div>
+                    <a href="/">20 Lessons</a>
+                    <p class="tutor-names">Theresa Webb</p>
+                    <p class="community-tutor">Community Tutor</p>
+                  </div>
+                  <div>
+                    <p class="grade">
+                      <span class="tutors-grade">
+                        <span>4.9 Rating</span>
+                        <em>4.9 Rating</em>
+                      </span>
+                    </p>
+                  </div>
+                </div>
+                <div class="speaks">
+                  <dl>
+                    <dt>Speaks</dt>
+                    <dd>English - <span>Native</span></dd>
+                    <dd>Spanish - <span>Native</span></dd>
+                  </dl>
+                </div>
+                <div class="trial">
+                  <dl>
+                    <div>
+                      <dt>30 Min trial</dt>
+                      <dd>IDR - 85.730.10</dd>
+                    </div>
 
-            <div class="works-block">
-              <dt>Start learning</dt>
-              <dd>Simple as that, you're learning a language</dd>
+                    <div>
+                      <dt>Hourly Rate from</dt>
+                      <dd>IDR - 485.730.10</dd>
+                    </div>
+                  </dl>
+                </div>
+                <div class="tutors-btn">
+                  <p>120 Students</p>
+                  <a href="/">Book</a>
+                </div>
+              </div>
             </div>
-          </dl>
-        </div>
-        <div class="video">
-          <img src="/img/video.png" alt="This is the image of the lesson" />
-        </div>
-      </div>
-      <div class="education">
-        <div class="edu-description">
-          <strong>Edu Smart it's about mastering a timeless skill</strong>
-          <p>
-            cultivating new perspectives, and connecting with fascinating people
-            from around the world.
-          </p>
-        </div>
-        <div class="edu-tutors">
-          <p class="grade">
-            <span class="tutors-grade">
-              <span>평점 별 5점 중</span>
-              <em>5</em>
-            </span>
-          </p>
-          <p>
-            "with Edu Smart, we can make it easier for you to master a foreign
-            language, it is important for us to grow and engage with our
-            students"
-          </p>
-          <div class="tutors-slide">
-            <a href="/">
-              <p>Jaquon Hart</p>
-              <p>Digital marketing Executive, Hypebeast</p>
-            </a>
-            <div class="slide-btn-next">
-              <button type="button">
-                <img src="/img/nextbtn.png" alt="tutors next slide button" />
-              </button>
+            <div class="tutors-Greetings">
+              <button>Profile</button>
+              <button>Schedule</button>
+              <p>
+                <img
+                  src="/img/theresa_video_img.png"
+                  alt="Click to play the Theresa Webb tutor greeting"
+                />
+              </p>
+              <p>Description</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Feugiat aliquam integer sit mauris sit. Pellentesque urna,
+                adipisicing at aliquam tempor non. Lectus bibendum sollicitudin
+                aliquet id...
+              </p>
+              <a href="/">Read more</a>
             </div>
-          </div>
-        </div>
+          </li>
+          <li>
+            <div class="tutors-Introduction">
+              <div class="kathryn-img"></div>
+              <div class="tutors-description">
+                <div class="tutor-name">
+                  <div>
+                    <a href="/">20 Lessons</a>
+                    <p class="tutor-names">Kathryn Murphy</p>
+                    <p class="community-tutor">Community Tutor</p>
+                  </div>
+                  <div>
+                    <p class="grade">
+                      <span class="tutors-grade">
+                        <span>4.9 Rating</span>
+                        <em>4.9 Rating</em>
+                      </span>
+                    </p>
+                  </div>
+                </div>
+                <div class="speaks">
+                  <dl>
+                    <dt>Speaks</dt>
+                    <dd>English - <span>Native</span></dd>
+                    <dd>Spanish - <span>Native</span></dd>
+                  </dl>
+                </div>
+                <div class="trial">
+                  <dl>
+                    <div>
+                      <dt>30 Min trial</dt>
+                      <dd>IDR - 85.730.10</dd>
+                    </div>
+
+                    <div>
+                      <dt>Hourly Rate from</dt>
+                      <dd>IDR - 485.730.10</dd>
+                    </div>
+                  </dl>
+                </div>
+                <div class="tutors-btn">
+                  <p>120 Students</p>
+                  <a href="/">Book</a>
+                </div>
+              </div>
+            </div>
+            <div class="tutors-Greetings">
+              <button>Profile</button>
+              <button>Schedule</button>
+              <p>
+                <img
+                  src="/img/kathryn_video_img.png"
+                  alt="Click to play the Kathryn Murphy greeting"
+                />
+              </p>
+              <p>Description</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Feugiat aliquam integer sit mauris sit. Pellentesque urna,
+                adipisicing at aliquam tempor non. Lectus bibendum sollicitudin
+                aliquet id...
+              </p>
+              <a href="/">Read more</a>
+            </div>
+          </li>
+          <li>
+            <div class="tutors-Introduction">
+              <div class="marvin-img"></div>
+              <div class="tutors-description">
+                <div class="tutor-name">
+                  <div>
+                    <a href="/">20 Lessons</a>
+                    <p class="tutor-names">Marvin McKinney</p>
+                    <p class="community-tutor">Community Tutor</p>
+                  </div>
+                  <div>
+                    <p class="grade">
+                      <span class="tutors-grade grade-size">
+                        <span>4.9 Rating</span>
+                        <em>4.9 Rating</em>
+                      </span>
+                    </p>
+                  </div>
+                </div>
+                <div class="speaks">
+                  <dl>
+                    <dt>Speaks</dt>
+                    <dd>English - <span>Native</span></dd>
+                    <dd>Spanish - <span>Native</span></dd>
+                  </dl>
+                </div>
+                <div class="trial">
+                  <dl>
+                    <div>
+                      <dt>30 Min trial</dt>
+                      <dd>IDR - 85.730.10</dd>
+                    </div>
+
+                    <div>
+                      <dt>Hourly Rate from</dt>
+                      <dd>IDR - 485.730.10</dd>
+                    </div>
+                  </dl>
+                </div>
+                <div class="tutors-btn">
+                  <p>120 Students</p>
+                  <a href="/">Book</a>
+                </div>
+              </div>
+            </div>
+            <div class="tutors-Greetings">
+              <button>Profile</button>
+              <button>Schedule</button>
+              <p>
+                <img
+                  src="/img/marvin_video_img.png"
+                  alt="Click to play the Marvin McKinney tutor greeting"
+                />
+              </p>
+              <p>Description</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Feugiat aliquam integer sit mauris sit. Pellentesque urna,
+                adipisicing at aliquam tempor non. Lectus bibendum sollicitudin
+                aliquet id...
+              </p>
+              <a href="/">Read more</a>
+            </div>
+          </li>
+        </ul>
       </div>
-      <div class="learn-more">
-        <div class="learn-more-discription">
-          <strong>Learn more than just a language 😍</strong>
-          <p>Over 100,000 students join us monthly</p>
-          <a href="/">
-            <img src="/img/Group 43.png" alt="Click to see other students" />
-            and athers</a
-          >
-        </div>
-        <div class="free-lessons">
-          <a href="/">Get your free lessons now</a>
-        </div>
-      </div>
+      <a href="/">Show more</a>
       <footer>
         <div class="foo-flex">
           <div class="tutorify-sns">
