@@ -281,12 +281,9 @@ select option[value=""][disabled] {
 .tutors-evaluation {
   max-width: 900px;
   margin: 0 auto;
-  /* display: flex; */
-  /* flex-wrap: no-wrap; */
-  /* flex-direction: row; */
 }
 
-.tutors-Introduction {
+.tutors-introduction {
   width: 393px;
   height: 574.75px;
   background-color: #ffffff;
@@ -297,49 +294,46 @@ select option[value=""][disabled] {
     rgba(0, 0, 0, 0.0527031) 0 -0.240442px 3.05705px;
   border-radius: 10px;
   z-index: -1;
+  padding: 20px;
 }
 
 .brooklyn-img {
   background-image: url(/img/france.png), url(/img/brooklyn_simmons.png);
   background-repeat: no-repeat;
-  background-position: 10% 80%, 50% 50%;
-  height: 250px;
+  background-position: 5% 90%, 50% 0%;
+  height: 210px;
 }
 
 .theresa-img {
   background-image: url(/img/china.png), url(/img/theresa_webb.png);
   background-repeat: no-repeat;
-  background-position: 10% 80%, 50% 50%;
-  height: 250px;
+  background-position: 5% 90%, 50% 0%;
+  height: 210px;
 }
 
 .kathryn-img {
   background-image: url(/img/russia.png), url(/img/kathryn_murphy.png);
   background-repeat: no-repeat;
-  background-position: 10% 80%, 50% 50%;
-  height: 250px;
+  background-position: 5% 90%, 50% 0%;
+  height: 210px;
 }
 
 .marvin-img {
   background-image: url(/img/germany.png), url(/img/marvin_mckinney.png);
   background-repeat: no-repeat;
-  background-position: 10% 80%, 50% 50%;
-  height: 250px;
+  background-position: 5% 90%, 50% 0%;
+  height: 210px;
 }
 
-.tutor-name a {
+.tutors-introduction a:first-child {
   font-weight: 500;
   font-size: 14px;
   line-height: 24px;
   color: black;
-  padding: 10px 0 10px 30px;
+  padding-left: 30px;
   background-image: url(/img/play_btn.png);
   background-repeat: no-repeat;
   background-position: 5% 50%;
-}
-
-.tutors-description {
-  padding: 0 25px 25px 25px;
 }
 
 .tutor-names {
@@ -348,18 +342,21 @@ select option[value=""][disabled] {
   line-height: 34px;
 }
 
-.community-tutor,
-.tutors-description dd {
+.tutors-introduction dd {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   color: #979797;
 }
 
-.tutors-description dt {
+.tutors-introduction dt {
   font-weight: 600;
   font-size: 16px;
   line-height: 27px;
+}
+
+.speaks {
+  padding: 10px 0;
 }
 
 .speaks dd {
@@ -374,13 +371,17 @@ select option[value=""][disabled] {
   color: #fb9c46;
 }
 
+.grade {
+  text-align: end;
+}
+
 .tutors-grade {
   display: inline-block;
   overflow: hidden;
   vertical-align: middle;
 }
 
-.tutors-grade.grade-size {
+.tutors-grade {
   position: relative;
   height: 18px;
   color: #333;
@@ -388,41 +389,33 @@ select option[value=""][disabled] {
   line-height: 18px;
 }
 
-.tutors-grade.grade-size > span {
+.grade-size {
+  position: relative;
+  height: 18px;
+  color: #333;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.grade-size > span {
   background-image: url(/img/star_grade.png);
-  background-position: 0;
+  background-position: 100px 0;
   width: 100px;
   height: 18px;
-  background-size: 482px 457px;
+  background-size: 100px;
   position: relative;
   overflow: hidden;
   display: inline-block;
   vertical-align: top;
   color: transparent;
   line-height: 200px;
-  font-size: 1px;
+  font-size: 1;
   content: "";
 }
 
-/* .tutors-grade {
-  display: inline-block;
-  overflow: hidden;
-  vertical-align: middle;
-  position: relative;
+.grade-size > span::after {
   background-image: url(/img/star_grade.png);
-  background-position: 100px 0;
-  background-size: 100px;
-  width: 100px;
-  height: 18px;
-  position: relative;
-  display: inline-block;
-  color: transparent;
-  content: "";
-}
-
-.tutors-grade:after {
-  background-image: url(/img/star_grade.png);
-  background-position: 100px -20px;
+  background-position: 100px 100px;
   width: 100px;
   height: 18px;
   background-size: 100px;
@@ -433,14 +426,11 @@ select option[value=""][disabled] {
   content: "";
 }
 
-.tutors-grade span {
-  font-size: 0;
-} */
-
 .tutor-name {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px 0;
 }
 
 .trial p {
@@ -463,7 +453,10 @@ select option[value=""][disabled] {
   line-height: 27px;
   color: #fb9c46;
   text-align: center;
-  padding: 10px;
+  padding: 10px 0 10px 30px;
+  background-image: url(/img/profile.png);
+  background-repeat: no-repeat;
+  background-position: 0 40%;
 }
 
 .tutors-btn a {
@@ -484,8 +477,26 @@ select option[value=""][disabled] {
 
 .trial {
   border-bottom: 1px solid black;
+  padding: 10px 0;
 }
 
-.tutors-description dl {
-  padding: 10px 0;
+.tutors-description {
+  margin-top: 20px;
+}
+
+.tutors-greetings {
+  position: relative;
+  width: 451px;
+  height: 575px;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.17) 0 -7px 89px,
+    rgba(0, 0, 0, 0.117297) 0 -2.55512px 32.4865px,
+    rgba(0, 0, 0, 0.0945694) 0 -1.24046px 15.7716px,
+    rgba(0, 0, 0, 0.0754306) 0 -0.608097px 7.73152px,
+    rgba(0, 0, 0, 0.0527031) 0 -0.240442px 3.05705px;
+  border-radius: 10px;
+}
+
+.greetings-btn {
+  text-align: center;
 }
