@@ -131,7 +131,6 @@ header {
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
-  /* padding: 10px; */
   text-align: center;
 }
 
@@ -153,6 +152,15 @@ header {
   color: #ffffff;
 }
 
+.toggle {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  font-size: 25px;
+  display: none;
+  color: #fb9c46;
+}
+
 .search {
   max-width: 1440px;
   display: flex;
@@ -165,8 +173,9 @@ header {
 .tutors-search {
   background-color: #ffffff;
   border-radius: 10px;
-  width: 807px;
+  width: 70%;
   height: 66px;
+  text-align: center;
   filter: drop-shadow(0 -2.55512px 32.4865px rgba(0, 0, 0, 0.117297))
     drop-shadow(0 -1.24049px 15.7716px rgba(0, 0, 0, 0.0945694));
 }
@@ -187,7 +196,7 @@ input[type="search"]:first-child {
 }
 
 .popular-tutors {
-  width: 357px;
+  width: 30%;
   height: 66px;
   border-radius: 10px;
   background-color: #ffffff;
@@ -196,7 +205,7 @@ input[type="search"]:first-child {
 }
 
 .tutors-search button {
-  width: 245.75px;
+  width: 28%;
   height: 44px;
   background-color: #fb9c46;
   border-radius: 10px;
@@ -252,7 +261,9 @@ select option[value=""][disabled] {
 
 .lesson-types-btn ul {
   display: flex;
+  justify-content: center;
   text-align: center;
+  flex-wrap: wrap;
   gap: 40px;
 }
 
@@ -475,6 +486,7 @@ select option[value=""][disabled] {
   font-size: 14px;
   line-height: 24px;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .trial dl {
@@ -602,6 +614,19 @@ footer {
   padding: 100px 70px 150px 70px;
 }
 
+.tutorify-sns p:first-child {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  padding: 20px 0;
+}
+
+.tutorify-sns p:nth-child(2n) {
+  padding: 30px 0;
+  font-weight: 400;
+  font-size: 12px;
+}
+
 .tutorify-sns ul {
   display: flex;
   justify-content: center;
@@ -653,4 +678,163 @@ footer ul li {
   font-weight: 20px;
   font-size: 16px;
   line-height: 21px;
+}
+
+@media screen and (max-width: 1430px) {
+  .search {
+    max-width: 1420px;
+  }
+
+  input[type="search"] {
+    padding: 22px 0px;
+  }
+
+  input[type="search"]:first-child {
+    background-position: 0% 50%;
+  }
+
+  .lesson-types-btn {
+    max-width: 1420px;
+  }
+
+  .lesson-types-btn ul {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1185px) {
+  .search {
+    max-width: 900px;
+    padding: 40px 0;
+  }
+
+  .tutors-search button {
+    background-position: 10% 50%;
+  }
+
+  .lesson-types-btn {
+    padding: 30px 90px 20px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .depth-wrap {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .depth-wrap.active {
+    display: block;
+  }
+
+  .register {
+    display: flex;
+    flex-direction: column;
+    display: none;
+  }
+
+  .register.active {
+    display: flex;
+  }
+
+  .toggle {
+    display: block;
+  }
+
+  .lesson-types-btn p a {
+    display: block;
+    text-align: center;
+  }
+
+  .search {
+    max-width: 700px;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .tutors-search {
+    width: 50%;
+    height: 190px;
+  }
+
+  input[type="search"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  input[type="search"]:first-child {
+    background-image: url(/img/placeholder_돋보기.png);
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+  }
+
+  .tutors-search button {
+    width: 30%;
+    background-image: none;
+    background-position: 5% 50%;
+  }
+
+  .tutors-evaluation li {
+    flex-direction: column;
+  }
+
+  .tutors-greetings {
+    display: none;
+  }
+
+  .lesson-types-btn {
+    max-width: 400px;
+    justify-content: space-around;
+    padding: 0;
+  }
+  footer {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    min-width: 0;
+  }
+
+  .foo-flex {
+    display: block;
+  }
+
+  .tutorify-sns {
+    width: 100%;
+  }
+
+  .tutorify-sns ul {
+    justify-content: flex-start;
+  }
+
+  .footer-inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tutorify-sns p:first-child {
+    font-size: 24px;
+  }
+
+  .tutorify-sns p:nth-child(2n) {
+    font-size: 12px;
+  }
+
+  .accordion ul li a {
+    display: none;
+  }
+
+  .accordion {
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .acc_menu {
+    overflow: hidden;
+    display: none;
+  }
 }

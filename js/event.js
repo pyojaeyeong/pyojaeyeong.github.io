@@ -1,1 +1,23 @@
-const schedule = document.querySelector("");
+const toggle = document.querySelector(".toggle");
+const menu = document.querySelector(".depth-wrap");
+const regi = document.querySelector(".register");
+
+toggle.addEventListener("click", () => {
+  menu.classList.toggle("active");
+  regi.classList.toggle("active");
+});
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+    var acc_menu = this.nextElementSibling;
+    if (acc_menu.style.display === "block") {
+      acc_menu.style.display = "none";
+    } else {
+      acc_menu.style.display = "block";
+    }
+  });
+}
