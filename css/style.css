@@ -205,7 +205,7 @@ input[type="search"]:first-child {
 }
 
 .tutors-search button {
-  width: 28%;
+  width: 30%;
   height: 44px;
   background-color: #fb9c46;
   border-radius: 10px;
@@ -219,6 +219,20 @@ input[type="search"]:first-child {
 }
 
 select option[value=""][disabled] {
+  display: none;
+}
+
+.lesson-select {
+  width: 152px;
+  height: 46px;
+  filter: drop-shadow(0 -2.55512px 32.4865px rgba(0, 0, 0, 0.117297))
+    drop-shadow(0 -1.24049px 15.7716px rgba(0, 0, 0, 0.0945694));
+  background-color: #ffffff;
+  border-radius: 10px;
+  text-align: center;
+  background-image: url(/img/show1.png);
+  background-repeat: no-repeat;
+  background-position: 10% 50%;
   display: none;
 }
 
@@ -257,6 +271,7 @@ select option[value=""][disabled] {
     rgba(0, 0, 0, 0.0527031) 0 -0.240442px 3.05705px;
   padding: 10px;
   border-radius: 5px;
+  display: block;
 }
 
 .lesson-types-btn ul {
@@ -361,6 +376,13 @@ select option[value=""][disabled] {
   line-height: 34px;
 }
 
+.community-tutor {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #979797;
+}
+
 .tutors-introduction dd {
   font-weight: 400;
   font-size: 14px;
@@ -372,6 +394,13 @@ select option[value=""][disabled] {
   font-weight: 600;
   font-size: 16px;
   line-height: 27px;
+}
+
+.grade em {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .speaks {
@@ -683,6 +712,8 @@ footer ul li {
 @media screen and (max-width: 1430px) {
   .search {
     max-width: 1420px;
+    justify-content: center;
+    align-items: center;
   }
 
   input[type="search"] {
@@ -693,13 +724,17 @@ footer ul li {
     background-position: 0% 50%;
   }
 
+  .tutors-search button {
+    background-position: 5% 50%;
+  }
+
   .lesson-types-btn {
     max-width: 1420px;
   }
 
-  .lesson-types-btn ul {
-    max-width: 600px;
-    margin: 0 auto;
+  .lesson-types-btn {
+    padding: 0;
+    max-width: 750px;
   }
 }
 
@@ -711,11 +746,6 @@ footer ul li {
 
   .tutors-search button {
     background-position: 10% 50%;
-  }
-
-  .lesson-types-btn {
-    padding: 30px 90px 20px;
-    margin: 0 auto;
   }
 }
 
@@ -745,38 +775,45 @@ footer ul li {
     display: block;
   }
 
-  .lesson-types-btn p a {
-    display: block;
-    text-align: center;
+  .tutors-search {
+    height: 46px;
+  }
+
+  .tutors-search button {
+    display: none;
   }
 
   .search {
-    max-width: 700px;
-    gap: 10px;
-    justify-content: center;
-  }
-
-  .tutors-search {
-    width: 50%;
-    height: 190px;
-  }
-
-  input[type="search"] {
-    display: flex;
+    gap: 0;
     justify-content: center;
     align-items: center;
   }
 
+  input[type="search"] {
+    padding: 14px 0;
+    font-size: 10px;
+  }
+
   input[type="search"]:first-child {
-    background-image: url(/img/placeholder_돋보기.png);
-    background-repeat: no-repeat;
     background-position: 0% 50%;
   }
 
-  .tutors-search button {
-    width: 30%;
-    background-image: none;
-    background-position: 5% 50%;
+  .lesson-select {
+    display: flex;
+  }
+
+  .lesson-types-btn ul {
+    display: none;
+  }
+
+  .lesson-types-btn {
+    padding: 0;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .popular-tutors {
+    display: none;
   }
 
   .tutors-evaluation li {
@@ -787,11 +824,6 @@ footer ul li {
     display: none;
   }
 
-  .lesson-types-btn {
-    max-width: 400px;
-    justify-content: space-around;
-    padding: 0;
-  }
   footer {
     width: 100%;
     margin: 0 auto;
@@ -836,5 +868,88 @@ footer ul li {
   .acc_menu {
     overflow: hidden;
     display: none;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .tutors-introduction {
+    width: 325px;
+    height: 486px;
+  }
+
+  .brooklyn-img {
+    background-size: 10%, 100%;
+    background-position: 5% 90%, 0 0;
+    height: 170px;
+  }
+  .theresa-img {
+    background-size: 10%, 100%;
+    background-position: 5% 90%, 0 0;
+    height: 170px;
+  }
+  .kathryn-img {
+    background-size: 10%, 100%;
+    background-position: 5% 90%, 0 0;
+    height: 170px;
+  }
+  .marvin-img {
+    background-size: 10%, 100%;
+    background-position: 5% 90%, 0 0;
+    height: 170px;
+  }
+
+  .tutors-introduction a:first-child {
+    font-size: 12px;
+  }
+
+  .tutor-name {
+    padding: 0;
+  }
+
+  .tutor-names {
+    font-size: 14px;
+  }
+
+  .community-tutor {
+    font-size: 10px;
+  }
+
+  .grade em {
+    font-size: 10px;
+  }
+
+  .speaks {
+    padding: 0;
+  }
+
+  .tutors-introduction dt {
+    font-size: 12px;
+  }
+
+  .tutors-introduction dd {
+    font-size: 10px;
+  }
+
+  .speaks dd span {
+    font-size: 10px;
+  }
+
+  .trial {
+    padding: 0;
+  }
+
+  .tutors-btn p {
+    font-size: 12px;
+    background-size: 15%;
+    background-position: 5% 50%;
+  }
+
+  .tutors-btn a {
+    font-size: 14px;
+    padding: 8px 25px;
+  }
+
+  .more-link a {
+    margin: 50px auto;
   }
 }
